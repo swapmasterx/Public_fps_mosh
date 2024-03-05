@@ -1,0 +1,98 @@
+[gd_scene load_steps=12 format=3 uid="uid://cc1m2a1obsyn4"]
+
+[ext_resource type="Script" path="res://addons/fpc/character.gd" id="1_0t4e8"]
+[ext_resource type="PackedScene" uid="uid://3mij3cjhkwsm" path="res://addons/fpc/reticles/reticle_1.tscn" id="2_uuexm"]
+[ext_resource type="Script" path="res://addons/fpc/debug.gd" id="3_x1wcc"]
+[ext_resource type="PackedScene" uid="uid://cqa8xn3lvt0v6" path="res://health_component.tscn" id="4_ij37k"]
+[ext_resource type="PackedScene" uid="uid://c0x2dbl3adufr" path="res://hitbox_component.tscn" id="5_mfe3t"]
+
+[sub_resource type="Gradient" id="Gradient_an0s7"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_84w37"]
+gradient = SubResource("Gradient_an0s7")
+fill = 2
+fill_to = Vector2(1, 1)
+metadata/_snap_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kp17n"]
+albedo_color = Color(0.345098, 0.403922, 0.909804, 1)
+albedo_texture = SubResource("GradientTexture2D_84w37")
+roughness = 0.8
+clearcoat_roughness = 0.2
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_jw1de"]
+material = SubResource("StandardMaterial3D_kp17n")
+
+[sub_resource type="Theme" id="Theme_wdf0f"]
+MarginContainer/constants/margin_bottom = 10
+MarginContainer/constants/margin_left = 10
+MarginContainer/constants/margin_right = 10
+MarginContainer/constants/margin_top = 10
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gg21a"]
+size = Vector3(1, 2, 1)
+
+[node name="Character" type="CharacterBody3D" node_paths=PackedStringArray("HEAD", "CAMERA", "COLLISION_MESH") groups=["team_1"]]
+collision_layer = 65
+collision_mask = 30
+script = ExtResource("1_0t4e8")
+HEAD = NodePath("Head")
+CAMERA = NodePath("Head/Camera")
+COLLISION_MESH = NodePath("HitboxComponent/CollisionHull")
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_jw1de")
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="Camera" type="Camera3D" parent="Head"]
+
+[node name="FirstPersonhandR" type="Node3D" parent="Head/Camera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.528256, -0.365129, -0.680941)
+
+[node name="UserInterface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Reticle_1" parent="UserInterface" node_paths=PackedStringArray("reticle_lines", "character") instance=ExtResource("2_uuexm")]
+layout_mode = 1
+reticle_lines = [NodePath("top"), NodePath("left"), NodePath("right"), NodePath("bottom")]
+character = NodePath("../..")
+
+[node name="DebugPanel" type="PanelContainer" parent="UserInterface"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 453.0
+offset_bottom = 50.0
+theme = SubResource("Theme_wdf0f")
+script = ExtResource("3_x1wcc")
+
+[node name="MarginContainer" type="MarginContainer" parent="UserInterface/DebugPanel"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UserInterface/DebugPanel/MarginContainer"]
+layout_mode = 2
+
+[node name="CrouchCeilingDetection" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+target_position = Vector3(0, 1, 0)
+collision_mask = 16
+
+[node name="HealthComponent" parent="." instance=ExtResource("4_ij37k")]
+
+[node name="HitboxComponent" parent="." instance=ExtResource("5_mfe3t")]
+health_component = null
+
+[node name="CollisionHull" type="CollisionShape3D" parent="HitboxComponent"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_gg21a")
+
+[editable path="UserInterface/Reticle_1"]

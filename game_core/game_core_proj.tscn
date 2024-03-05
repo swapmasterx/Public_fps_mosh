@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://ckpvatrpps787"]
+
+[ext_resource type="Script" path="res://addons/untrue/game_root.gd" id="1_qo50s"]
+[ext_resource type="PackedScene" uid="uid://dvp0noigxnh7e" path="res://game_core/loading_screen/temp_loading_screen.tscn" id="2_3vlen"]
+
+[sub_resource type="Animation" id="Animation_u3pp0"]
+resource_name = "loading transision"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_exphd"]
+_data = {
+"loading transision": SubResource("Animation_u3pp0")
+}
+
+[node name="GameRoot" type="Node" node_paths=PackedStringArray("hud_root", "transition_animation_player")]
+script = ExtResource("1_qo50s")
+default_level_path = "res://_levels/dev_worlds/test_world_2.tscn"
+hud_root = NodePath("Control")
+transition_animation_player = NodePath("transision_animation_holder")
+loading_screen = ExtResource("2_3vlen")
+loading_screen_show_timeout = 5.0
+
+[node name="transision_animation_holder" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_exphd")
+}
+
+[node name="network" type="Node" parent="."]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4

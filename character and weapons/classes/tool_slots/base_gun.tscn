@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ce87kjycnge8a"]
+
+[ext_resource type="Script" path="res://character and weapons/character_base/base_gun_noded.gd" id="1_l424n"]
+[ext_resource type="Resource" uid="uid://ddrohyqssu51b" path="res://character and weapons/classes/Roamer/Axel/character_components/trivolver.tres" id="2_32qcg"]
+
+[sub_resource type="Curve2D" id="Curve2D_hp0hy"]
+bake_interval = 1.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 3, 4, 0, 0, 0, 0, -5, 4, 0, 0, 0, 0, 3, -4, 0, 0, 0, 0, -5, -4)
+}
+point_count = 5
+
+[node name="base_gun" type="Node3D"]
+script = ExtResource("1_l424n")
+stats = ExtResource("2_32qcg")
+
+[node name="muzzle" type="Marker3D" parent="."]
+unique_name_in_owner = true
+
+[node name="spread" type="Path2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(640, 360)
+curve = SubResource("Curve2D_hp0hy")

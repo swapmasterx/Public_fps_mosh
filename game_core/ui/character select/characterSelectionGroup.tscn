@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyj5yawj3xcqa"]
+
+[ext_resource type="PackedScene" uid="uid://fuenmr1ufh5k" path="res://game_core/ui/character select/char_select_button_1.tscn" id="1_sdxsw"]
+[ext_resource type="Texture2D" uid="uid://d3ephq06g285h" path="res://game_core/ui/character select/Rozeten_still.png" id="2_r0rc3"]
+
+[node name="CharacterSelectionGroup" type="GridContainer"]
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 5
+
+[node name="char_button_1" parent="." instance=ExtResource("1_sdxsw")]
+layout_mode = 2
+char_name = "Shotty"
+char_ID = 1
+
+[node name="char_button_2" parent="." instance=ExtResource("1_sdxsw")]
+layout_mode = 2
+char_name = "Axel"
+char_ID = 2
+
+[node name="char_button_3" parent="." instance=ExtResource("1_sdxsw")]
+layout_mode = 2
+char_name = "Rozeten"
+char_prev_image = ExtResource("2_r0rc3")
+char_ID = 3

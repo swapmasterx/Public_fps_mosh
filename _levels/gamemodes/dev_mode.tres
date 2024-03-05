@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GameMode" load_steps=4 format=3 uid="uid://b1bwoea0a464q"]
+
+[ext_resource type="Script" path="res://addons/untrue/game_mode.gd" id="1_qci52"]
+[ext_resource type="PackedScene" uid="uid://bksjx6b6vebpa" path="res://game_core/ui/koth_ui.tscn" id="1_xfxrj"]
+[ext_resource type="PackedScene" uid="uid://bnwp1imc5vpcd" path="res://character and weapons/classes/Damage/shotgun/shotty_demo.tscn" id="2_exyit"]
+
+[resource]
+script = ExtResource("1_qci52")
+player_character_scene = ExtResource("2_exyit")
+hud_scene = ExtResource("1_xfxrj")

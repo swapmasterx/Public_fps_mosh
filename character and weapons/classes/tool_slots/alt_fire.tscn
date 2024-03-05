@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://b3vjto13unbj1"]
+
+[ext_resource type="Script" path="res://character and weapons/character_base/base_gun_noded.gd" id="1_jblf8"]
+[ext_resource type="Resource" uid="uid://8hlqvjgcnal0" path="res://character and weapons/classes/Roamer/Axel/character_components/claw_dash_stats.tres" id="2_ecxis"]
+
+[sub_resource type="Curve2D" id="Curve2D_3172f"]
+bake_interval = 1.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 0, 16, -16, 0, 0, 0, 0, 0, -25, 0, 0, 0, 0, 0, -35, 0, 0, 0, 0, -16, -16, 0, 0, 0, 0, -25, 0, 0, 0, 0, 0, -35, 0, 0, 0, 0, 0, -16, 16, 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 16, 16)
+}
+point_count = 13
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1xmdp"]
+margin = 0.05
+size = Vector3(0.5, 1, 0.7)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_63v00"]
+transparency = 1
+albedo_color = Color(1, 0.521569, 0.521569, 0.141176)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vphjg"]
+material = SubResource("StandardMaterial3D_63v00")
+size = Vector3(0.5, 1, 1)
+
+[node name="altfire" type="Node3D"]
+script = ExtResource("1_jblf8")
+is_buffable = false
+stats = ExtResource("2_ecxis")
+
+[node name="muzzle" type="Marker3D" parent="."]
+unique_name_in_owner = true
+
+[node name="spread" type="Path2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(640, 360)
+curve = SubResource("Curve2D_3172f")
+
+[node name="Area3D" type="Area3D" parent="."]
+unique_name_in_owner = true
+collision_layer = 0
+collision_mask = 960
+input_ray_pickable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+visibility_parent = NodePath("../MeshInstance3D")
+shape = SubResource("BoxShape3D_1xmdp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D"]
+visible = false
+mesh = SubResource("BoxMesh_vphjg")

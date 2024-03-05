@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Buff" load_steps=2 format=3 uid="uid://b3ef7v5aymxxy"]
+
+[ext_resource type="Script" path="res://character and weapons/buffs/buff_script.gd" id="1_e8mdl"]
+
+[resource]
+script = ExtResource("1_e8mdl")
+name = "teletime"
+duration = 10.0
+headshot_multiplier_bonus = 0.0
+damage_multiplier = 0.0
+attack_speed_multiplier = 0.0
+infinite_ammo = false
+damage_taken_mult = 0.0
+dot_duration = 0.0
+dot_damage = 0.0
+dot_damage_rate = 0.0
+move_speed_mult = 0.1
+jump_hight_mult = 0.0
+dash_time = 0.0
+dash_speed = 0.0

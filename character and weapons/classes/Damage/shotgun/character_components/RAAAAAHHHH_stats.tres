@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="WeaponStats" load_steps=4 format=3 uid="uid://cg5yrrmh8ob6j"]
+
+[ext_resource type="PackedScene" uid="uid://c12gqqb0b4ea6" path="res://character and weapons/classes/Damage/shotgun/character_components/RAAAAAHHHH_projectile.tscn" id="1_7wdbd"]
+[ext_resource type="Resource" uid="uid://cao0pjhwgr1ba" path="res://character and weapons/classes/Damage/shotgun/character_components/RAAAAAHHHH self slow.tres" id="1_ffw67"]
+[ext_resource type="Script" path="res://character and weapons/character_base/weaponstats.gd" id="2_jo042"]
+
+[resource]
+script = ExtResource("2_jo042")
+name = "RAAAAAHHHH"
+weapon_slot = 4
+is_primary = false
+can_manually_reload = false
+fire_animation_call = ""
+reload_animation_call = ""
+breach_reload_animation_call = ""
+Type2 = 3
+breach_load = false
+breach_load_count = 1
+buff_handler_1 = ExtResource("1_ffw67")
+spread_random = 0
+projectileToLoad = ExtResource("1_7wdbd")
+projectileSpeed = 0
+rangeValue = 2000
+recoil_enabled = false
+damage = 0.0
+damage_maxFalloff = 0.0
+blast_damage = 3000.0
+headshot_multiplier = 0.0
+max_ammo = 1
+ammo = 1
+ammo_per_shot = 1
+projectiles_per_shot = 1
+firing_type = 8
+reload_speed = 1.0
+firing_speed = 1.5
+min_firing_speed = 0.0
+max_firing_speed = 0.0
+RPM_speed_ramp = 0.0
+ability_duration = 1.5
+damage_falloff_start = 0
+damage_falloff_end = 0
+AoE_falloff_start = 5.0
+AoE_falloff_end = 8.0
+AoE_falloff_reduction = 80.0
+uses_melee_box = false
+melee_box_duration = 0.3
+Passive_lockout_check = false
+Primary_lockout_check = true
+AltFire_lockout_check = true
+Ability1_lockout_check = true
+Ability2_lockout_check = false
+burstfire_delay = 0.0
+burstfire_lockout = 0.0
+burstfire_shot_count = 0
+vertical_angle = 5.0
+horizontal_angle = 1.0
+min_recoil_amount = 5.0
+max_recoil_amount = 5.0
+recoil_recovery_speed = 5.0

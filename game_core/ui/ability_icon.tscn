@@ -1,0 +1,128 @@
+[gd_scene load_steps=7 format=3 uid="uid://cwwwtnk62xlf6"]
+
+[ext_resource type="Texture2D" uid="uid://56o81k1ahbw6" path="res://game_core/ui/skill placeholder.png" id="1_v7l52"]
+[ext_resource type="Texture2D" uid="uid://cusyqxilelam4" path="res://game_core/ui/ability_icon_cooldown.png" id="2_b438s"]
+[ext_resource type="Script" path="res://game_core/ui/ability_icon_cooldown_visualizer.gd" id="2_qhpyn"]
+[ext_resource type="FontFile" uid="uid://bgw2r1115ybk4" path="res://game_core/ui/Inkfree.ttf" id="3_mapvk"]
+[ext_resource type="Texture2D" uid="uid://e2olwircyc05" path="res://game_core/ui/ability_icon_duration.png" id="4_4olvr"]
+[ext_resource type="Texture2D" uid="uid://45j13uywllpy" path="res://game_core/ui/bullet_decal_debug.png" id="6_1471k"]
+
+[node name="ability_button" type="TextureButton"]
+offset_right = 128.0
+offset_bottom = 128.0
+texture_normal = ExtResource("1_v7l52")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("2_qhpyn")
+
+[node name="cooldown_visual" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 124.0
+offset_bottom = 124.0
+step = 0.05
+fill_mode = 3
+texture_progress = ExtResource("2_b438s")
+tint_under = Color(0.0392157, 0.0392157, 0.0392157, 0.321569)
+tint_progress = Color(0, 0, 0, 0.552941)
+
+[node name="cooldown_darken" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 124.0
+offset_bottom = 124.0
+step = 0.05
+fill_mode = 3
+texture_progress = ExtResource("2_b438s")
+tint_under = Color(0.0392157, 0.0392157, 0.0392157, 0.321569)
+tint_progress = Color(0, 0, 0, 0.552941)
+
+[node name="duration_visual" type="TextureProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -60.0
+offset_right = 60.0
+offset_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+step = 0.025
+fill_mode = 5
+texture_progress = ExtResource("4_4olvr")
+
+[node name="cooldown_time" type="Timer" parent="."]
+one_shot = true
+
+[node name="time" type="Label" parent="."]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -30.0
+offset_right = 432.0
+offset_bottom = 218.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.24, 0.24)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_mapvk")
+theme_override_font_sizes/font_size = 200
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="key" type="Label" parent="."]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -128.0
+offset_top = 1.0
+offset_right = 1424.0
+offset_bottom = 249.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.165, 0.165)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_mapvk")
+theme_override_font_sizes/font_size = 200
+text = "key_space_large"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="duration_time" type="Timer" parent="."]
+wait_time = 0.05
+one_shot = true
+
+[node name="lockedOut" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_1471k")
+
+[connection signal="timeout" from="cooldown_time" to="." method="_on_cooldown_time_timeout"]
+[connection signal="timeout" from="duration_time" to="." method="_on_duration_time_timeout"]

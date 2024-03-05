@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dp0lk73knr3dt"]
+
+[ext_resource type="Script" path="res://character and weapons/character_base/headbox.gd" id="1_056a3"]
+
+[node name="headbox" type="Area3D" groups=["team_2"]]
+collision_layer = 64
+collision_mask = 960
+script = ExtResource("1_056a3")

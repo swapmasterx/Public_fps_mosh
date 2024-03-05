@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://onk10d1uyg17"]
+
+[ext_resource type="Script" path="res://character and weapons/character_base/base_gun_noded.gd" id="1_aa3a7"]
+[ext_resource type="Resource" uid="uid://cg5o867v1bgjd" path="res://character and weapons/classes/Damage/shotgun/character_components/bouncy_grenade_stats.tres" id="2_hssim"]
+
+[sub_resource type="Curve2D" id="Curve2D_3172f"]
+bake_interval = 1.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0)
+}
+point_count = 1
+
+[node name="bouncy_nade" type="Node3D"]
+script = ExtResource("1_aa3a7")
+is_buffable = false
+stats = ExtResource("2_hssim")
+
+[node name="muzzle" type="Marker3D" parent="."]
+unique_name_in_owner = true
+
+[node name="spread" type="Path2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(640, 360)
+curve = SubResource("Curve2D_3172f")

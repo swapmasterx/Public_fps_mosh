@@ -1,0 +1,67 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://e5jcwhck7lmo"]
+
+[ext_resource type="FontFile" uid="uid://bgw2r1115ybk4" path="res://game_core/ui/Inkfree.ttf" id="1_gjrpj"]
+[ext_resource type="FontFile" uid="uid://bwe80bcv1ec2j" path="res://game_core/ui/tf2build.ttf" id="1_n61dg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q5gti"]
+bg_color = Color(0.196078, 0.211765, 0.603922, 0.909804)
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_htvjs"]
+bg_color = Color(0.196078, 0.211765, 0.603922, 0.909804)
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l1nmj"]
+bg_color = Color(0.196078, 0.211765, 0.603922, 0.909804)
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k4ic2"]
+bg_color = Color(0.196078, 0.211765, 0.603922, 0.909804)
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0nuqt"]
+bg_color = Color(0.196078, 0.211765, 0.603922, 0.909804)
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[resource]
+default_font = ExtResource("1_gjrpj")
+default_font_size = 20
+Fonts/fonts/large = ExtResource("1_n61dg")
+Fonts/fonts/normal = ExtResource("1_gjrpj")
+RemapButton/base_type = &"Button"
+RemapButton/colors/font_color = Color(0, 0, 0, 1)
+RemapButton/colors/font_disabled_color = Color(0, 0, 0, 1)
+RemapButton/colors/font_focus_color = Color(0, 0, 0, 1)
+RemapButton/colors/font_hover_color = Color(0, 0, 0, 1)
+RemapButton/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+RemapButton/colors/font_outline_color = Color(0, 0, 0, 1)
+RemapButton/colors/font_pressed_color = Color(0, 0, 0, 1)
+RemapButton/colors/icon_disabled_color = Color(0, 0, 0, 1)
+RemapButton/colors/icon_focus_color = Color(0, 0, 0, 1)
+RemapButton/colors/icon_hover_color = Color(0, 0, 0, 1)
+RemapButton/colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+RemapButton/colors/icon_normal_color = Color(0, 0, 0, 1)
+RemapButton/colors/icon_pressed_color = Color(0, 0, 0, 1)
+RemapButton/constants/h_separation = 0
+RemapButton/constants/icon_max_width = 0
+RemapButton/constants/outline_size = 0
+RemapButton/styles/disabled = SubResource("StyleBoxFlat_q5gti")
+RemapButton/styles/focus = SubResource("StyleBoxFlat_htvjs")
+RemapButton/styles/hover = SubResource("StyleBoxFlat_l1nmj")
+RemapButton/styles/normal = SubResource("StyleBoxFlat_k4ic2")
+RemapButton/styles/pressed = SubResource("StyleBoxFlat_0nuqt")

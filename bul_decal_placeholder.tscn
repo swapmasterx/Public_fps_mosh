@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cncjswijukfe"]
+
+[ext_resource type="Script" path="res://bul_hole_despawn.gd" id="1_ytg7f"]
+[ext_resource type="Texture2D" uid="uid://45j13uywllpy" path="res://game_core/ui/bullet_decal_debug.png" id="2_c8lq1"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+script = ExtResource("1_ytg7f")
+
+[node name="Decal" type="Decal" parent="."]
+size = Vector3(0.2, 0.2, 0.2)
+texture_albedo = ExtResource("2_c8lq1")
+distance_fade_enabled = true
+distance_fade_begin = 30.0
+
+[node name="bullet_hole_despawn" type="Timer" parent="."]
+wait_time = 4.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="bullet_hole_despawn" to="." method="_on_bullet_hole_despawn_timeout"]

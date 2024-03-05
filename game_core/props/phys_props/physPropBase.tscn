@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://hxpod5erwhpj"]
+
+[ext_resource type="Script" path="res://game_core/props/phys_props/physPropBase.gd" id="1_oer21"]
+[ext_resource type="PackedScene" uid="uid://c0x2dbl3adufr" path="res://hitbox_component.tscn" id="2_7jyww"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xq7ry"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1xkoh"]
+
+[node name="PhysPropBase" type="RigidBody3D"]
+collision_layer = 0
+collision_mask = 16
+script = ExtResource("1_oer21")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_xq7ry")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_1xkoh")
+
+[node name="HitboxComponent" parent="." node_paths=PackedStringArray("physProp") instance=ExtResource("2_7jyww")]
+collision_layer = 16
+collision_mask = 960
+physProp = NodePath("..")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="HitboxComponent"]
+shape = SubResource("BoxShape3D_1xkoh")

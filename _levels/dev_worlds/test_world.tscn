@@ -1,0 +1,57 @@
+[gd_scene load_steps=11 format=3 uid="uid://wrc3o06gx6vc"]
+
+[ext_resource type="PackedScene" uid="uid://dmdjjstkp6blq" path="res://_levels/common_objects/sB_team_1.tscn" id="1_f548r"]
+[ext_resource type="PackedScene" uid="uid://bjbqsf2py8ydw" path="res://_levels/common_objects/sB_team_2.tscn" id="2_kenew"]
+[ext_resource type="PackedScene" uid="uid://cfvpmnabscrmj" path="res://_levels/common_objects/sB_team_3.tscn" id="3_2ew2s"]
+[ext_resource type="PackedScene" uid="uid://dirwr2gnlkvdk" path="res://_levels/common_objects/sB_team_4.tscn" id="4_olwcc"]
+[ext_resource type="PackedScene" uid="uid://b5bwl7rxru377" path="res://test_dummy.tscn" id="5_wtgsv"]
+[ext_resource type="PackedScene" uid="uid://b8cr7avqjm3p2" path="res://character and weapons/bulletBase/explosive_base.tscn" id="6_gvcyr"]
+[ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://character and weapons/classes/Pick/basis/talus_demo.tscn" id="7_ik5de"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_edcox"]
+ground_color = Color(0.160784, 0.815686, 0.905882, 1)
+
+[sub_resource type="Sky" id="Sky_2iust"]
+sky_material = SubResource("PhysicalSkyMaterial_edcox")
+
+[sub_resource type="Environment" id="Environment_20rw3"]
+background_mode = 2
+sky = SubResource("Sky_2iust")
+tonemap_mode = 1
+ssao_enabled = true
+
+[node name="test_world" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_20rw3")
+
+[node name="sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.87959, -0.436605, 0.188936, 0, 0.397148, 0.917755, -0.475732, -0.807248, 0.349328, 0, 0, 0)
+light_energy = 4.0
+shadow_enabled = true
+
+[node name="sB_team_1" parent="." instance=ExtResource("1_f548r")]
+transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, -25, 4, 21)
+
+[node name="sB_team_2" parent="." instance=ExtResource("2_kenew")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 4, -21)
+
+[node name="sB_team_3" parent="." instance=ExtResource("3_2ew2s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15)
+
+[node name="sB_team_4" parent="." instance=ExtResource("4_olwcc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 15)
+
+[node name="dummy" parent="." groups=["team_2"] instance=ExtResource("5_wtgsv")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -25, 2.36575, -23)
+
+[node name="HealthComponent" parent="dummy" index="1"]
+maxHP = 10000
+
+[node name="RigidBody3D" parent="." instance=ExtResource("6_gvcyr")]
+transform = Transform3D(1, 0, 0, 0, 0.707107, -0.707107, 0, 0.707107, 0.707107, -25.0602, 5.6408, -22.9547)
+
+[node name="Character_Hitscan" parent="." instance=ExtResource("7_ik5de")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.64093, 0, 0)
+
+[editable path="dummy"]

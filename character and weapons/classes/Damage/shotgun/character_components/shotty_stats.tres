@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="WeaponStats" load_steps=3 format=3 uid="uid://dhad6cta4qvxb"]
+
+[ext_resource type="PackedScene" uid="uid://43asvjsglnhk" path="res://character and weapons/classes/Roamer/Axel/character_components/tal_projectile_test.tscn" id="1_ufhkp"]
+[ext_resource type="Script" path="res://character and weapons/character_base/weaponstats.gd" id="2_slyod"]
+
+[resource]
+script = ExtResource("2_slyod")
+name = "Shotty"
+weapon_slot = 5
+is_primary = true
+can_manually_reload = true
+fire_animation_call = "KeyAction"
+reload_animation_call = "starting_reload_shotty"
+breach_reload_animation_call = "ArmatureAction_003"
+Type2 = 4
+breach_load = true
+breach_load_count = 1
+spread_random = 0
+projectileToLoad = ExtResource("1_ufhkp")
+projectileSpeed = 5
+rangeValue = 2000
+recoil_enabled = true
+damage = 800.0
+damage_maxFalloff = 300.0
+blast_damage = 0.0
+headshot_multiplier = 1.0
+max_ammo = 6
+ammo = 6
+ammo_per_shot = 1
+projectiles_per_shot = 10
+firing_type = 9
+reload_speed = 0.5
+firing_speed = 0.7
+min_firing_speed = 0.0
+max_firing_speed = 0.0
+RPM_speed_ramp = 0.0
+ability_duration = 0.0
+damage_falloff_start = 8
+damage_falloff_end = 15
+AoE_falloff_start = 1.0
+AoE_falloff_end = 1.75
+AoE_falloff_reduction = 50.0
+uses_melee_box = false
+melee_box_duration = 0.4
+Passive_lockout_check = false
+Primary_lockout_check = false
+AltFire_lockout_check = true
+Ability1_lockout_check = true
+Ability2_lockout_check = true
+burstfire_delay = 0.0
+burstfire_lockout = 0.0
+burstfire_shot_count = 0
+vertical_angle = 4.0
+horizontal_angle = 0.4
+min_recoil_amount = 1.0
+max_recoil_amount = 1.0
+recoil_recovery_speed = 6.0

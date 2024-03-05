@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqa8xn3lvt0v6"]
+
+[ext_resource type="Script" path="res://HealthComponent.gd" id="1_0ebq7"]
+
+[node name="HealthComponent" type="Node3D"]
+script = ExtResource("1_0ebq7")
+
+[node name="out_of_combat_regen_timer" type="Timer" parent="."]
+wait_time = 0.25
+
+[node name="time_till_out_of_combat" type="Timer" parent="."]
+wait_time = 7.0
+one_shot = true
+
+[connection signal="damaged" from="." to="." method="_on_damaged"]
+[connection signal="timeout" from="time_till_out_of_combat" to="." method="_on_time_till_out_of_combat_timeout"]

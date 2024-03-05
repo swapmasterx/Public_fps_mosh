@@ -1,0 +1,99 @@
+[gd_scene load_steps=2 format=3 uid="uid://bksjx6b6vebpa"]
+
+[ext_resource type="FontFile" uid="uid://bwe80bcv1ec2j" path="res://game_core/ui/tf2build.ttf" id="1_ewivf"]
+
+[node name="koth" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 490
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 490
+theme_override_constants/margin_bottom = 655
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
+layout_mode = 2
+color = Color(0.356863, 0.215686, 0.368627, 0.788235)
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 2
+theme_override_constants/v_separation = 5
+columns = 3
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(101, 40)
+layout_mode = 2
+color = Color(0.611765, 0.121569, 0.121569, 1)
+
+[node name="Label2" type="Label" parent="MarginContainer/GridContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("1_ewivf")
+theme_override_font_sizes/font_size = 30
+text = "00:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect2" type="ColorRect" parent="MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(94, 40)
+layout_mode = 2
+color = Color(0.501961, 0.501961, 0.501961, 1)
+
+[node name="Label" type="Label" parent="MarginContainer/GridContainer/ColorRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("1_ewivf")
+theme_override_font_sizes/font_size = 30
+text = "00:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect3" type="ColorRect" parent="MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(101, 40)
+layout_mode = 2
+color = Color(0.137255, 0.290196, 0.678431, 1)
+
+[node name="Label" type="Label" parent="MarginContainer/GridContainer/ColorRect3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("1_ewivf")
+theme_override_font_sizes/font_size = 30
+text = "00:00"
+horizontal_alignment = 1
+vertical_alignment = 1

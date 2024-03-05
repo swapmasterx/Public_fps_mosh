@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="WeaponStats" load_steps=3 format=3 uid="uid://ddrohyqssu51b"]
+
+[ext_resource type="PackedScene" uid="uid://43asvjsglnhk" path="res://character and weapons/classes/Roamer/Axel/character_components/tal_projectile_test.tscn" id="1_hxy63"]
+[ext_resource type="Script" path="res://character and weapons/character_base/weaponstats.gd" id="2_a8k5q"]
+
+[resource]
+script = ExtResource("2_a8k5q")
+name = "Trivolver"
+input = "shoot"
+weapon_slot = 1
+is_primary = true
+can_manually_reload = true
+fire_animation_call = "gun_fire"
+reload_animation_call = "reload"
+breach_reload_animation_call = ""
+Type2 = 3
+breach_load = false
+breach_load_count = 1
+spread_random = 5
+projectileToLoad = ExtResource("1_hxy63")
+projectileSpeed = 60
+rangeValue = 2000
+recoil_enabled = true
+damage = 130.0
+damage_maxFalloff = 80.0
+blast_damage = 0.0
+headshot_multiplier = 1.25
+max_ammo = 27
+ammo = 27
+ammo_per_shot = 1
+projectiles_per_shot = 1
+firing_type = 2
+reload_speed = 1.8
+firing_speed = 0.35
+min_firing_speed = 0.0
+max_firing_speed = 0.0
+RPM_speed_ramp = 0.0
+ability_duration = 0.0
+damage_falloff_start = 15
+damage_falloff_end = 30
+uses_melee_box = false
+melee_box_duration = 0.4
+Passive_lockout_check = false
+Primary_lockout_check = true
+AltFire_lockout_check = false
+Ability1_lockout_check = false
+Ability2_lockout_check = false
+burstfire_delay = 0.08
+burstfire_lockout = 0.3
+burstfire_shot_count = 3
+vertical_angle = 3.0
+horizontal_angle = 0.1
+min_recoil_amount = 0.7
+max_recoil_amount = 0.8
+recoil_recovery_speed = 5.0

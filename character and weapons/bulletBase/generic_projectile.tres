@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="GenericProjectile" load_steps=2 format=3 uid="uid://ch5qke73swjsy"]
+
+[ext_resource type="Script" path="res://character and weapons/bulletBase/bullet_phys.gd" id="1_km1vr"]
+
+[resource]
+script = ExtResource("1_km1vr")
+damage = 250.0
+projectile_speed = 1.0

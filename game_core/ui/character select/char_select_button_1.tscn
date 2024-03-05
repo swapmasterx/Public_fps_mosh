@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://fuenmr1ufh5k"]
+
+[ext_resource type="Texture2D" uid="uid://bgecjdmnrf52k" path="res://game_core/ui/character select/char portrate placeholder.png" id="1_3w5w7"]
+[ext_resource type="Texture2D" uid="uid://btqbt70yoda80" path="res://game_core/ui/character select/char portrate clicked placeholder.png" id="2_jl10k"]
+[ext_resource type="Texture2D" uid="uid://c2yfseob6nmjh" path="res://game_core/ui/character select/char portrate hover placeholder.png" id="3_jbv3j"]
+[ext_resource type="Script" path="res://game_core/ui/character select/char_select_button.gd" id="3_piwjt"]
+[ext_resource type="FontFile" uid="uid://dthxstyheam2t" path="res://game_core/ui/TF2.ttf" id="4_exm74"]
+[ext_resource type="Texture2D" uid="uid://cmw2cy4uli3ap" path="res://game_core/ui/character select/char portrate disabled placeholder.png" id="4_tdqxs"]
+[ext_resource type="Texture2D" uid="uid://vqhfqwnbv1ml" path="res://game_core/ui/skill placeholder ult.png" id="6_q2185"]
+
+[node name="char_button_1" type="TextureButton"]
+texture_normal = ExtResource("1_3w5w7")
+texture_pressed = ExtResource("2_jl10k")
+texture_hover = ExtResource("3_jbv3j")
+texture_disabled = ExtResource("4_tdqxs")
+script = ExtResource("3_piwjt")
+char_prev_image = ExtResource("6_q2185")
+
+[node name="charName" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 105.0
+offset_right = 412.0
+offset_bottom = 105.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 13
+theme_override_fonts/font = ExtResource("4_exm74")
+theme_override_font_sizes/font_size = 100
+text = "#char_name#"
+horizontal_alignment = 1
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

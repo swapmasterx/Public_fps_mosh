@@ -1,0 +1,71 @@
+[gd_scene load_steps=12 format=3 uid="uid://b5bwl7rxru377"]
+
+[ext_resource type="Script" path="res://test_dummy.gd" id="1_1tygo"]
+[ext_resource type="PackedScene" uid="uid://cqa8xn3lvt0v6" path="res://health_component.tscn" id="1_j8rdw"]
+[ext_resource type="PackedScene" uid="uid://dp0lk73knr3dt" path="res://character and weapons/character_base/headbox.tscn" id="2_7lohc"]
+[ext_resource type="PackedScene" uid="uid://c0x2dbl3adufr" path="res://hitbox_component.tscn" id="2_gi5if"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3yw62"]
+albedo_color = Color(0.929412, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6hkym"]
+material = SubResource("StandardMaterial3D_3yw62")
+size = Vector3(1, 1.5, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5fjxl"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_0ejqy"]
+material = SubResource("StandardMaterial3D_5fjxl")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xilkt"]
+size = Vector3(1, 2.5, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d84rs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8c0p7"]
+size = Vector3(1, 1.5, 1)
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+collision_layer = 2
+collision_mask = 29
+script = ExtResource("1_1tygo")
+Player = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24672, 0)
+mesh = SubResource("BoxMesh_6hkym")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("BoxMesh_0ejqy")
+
+[node name="HealthComponent" parent="." node_paths=PackedStringArray("buff_grab") instance=ExtResource("1_j8rdw")]
+is_player = false
+maxHP = 100000
+buff_grab = NodePath("..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." groups=["team_2"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.250427, 0)
+shape = SubResource("BoxShape3D_xilkt")
+
+[node name="headbox" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("2_7lohc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+collision_layer = 128
+health_component = NodePath("../HealthComponent")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="headbox"]
+shape = SubResource("BoxShape3D_d84rs")
+
+[node name="HitboxComponent" parent="." node_paths=PackedStringArray("health_component") groups=["team_2"] instance=ExtResource("2_gi5if")]
+collision_layer = 128
+collision_mask = 960
+health_component = NodePath("../HealthComponent")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HitboxComponent"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24734, 0)
+shape = SubResource("BoxShape3D_8c0p7")
+
+[node name="CrouchCeilingDetection" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+target_position = Vector3(0, 1, 0)
+collision_mask = 16

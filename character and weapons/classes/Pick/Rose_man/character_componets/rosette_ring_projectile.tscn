@@ -1,0 +1,89 @@
+[gd_scene load_steps=7 format=3 uid="uid://fyd5l4mslhys"]
+
+[ext_resource type="Script" path="res://character and weapons/bulletBase/explosive_base_script.gd" id="1_w4ubu"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_q35d3"]
+radius = 0.15
+
+[sub_resource type="TorusMesh" id="TorusMesh_7u8m6"]
+inner_radius = 15.0
+outer_radius = 20.0
+rings = 16
+ring_segments = 16
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_brctt"]
+radius = 0.155
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_dv3pt"]
+radius = 1.5
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_txie8"]
+properties/0/path = NodePath(".:linear_velocity")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:angular_velocity")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+properties/2/path = NodePath(".:position")
+properties/2/spawn = true
+properties/2/replication_mode = 1
+properties/3/path = NodePath(".:rotation")
+properties/3/spawn = true
+properties/3/replication_mode = 1
+
+[node name="RigidBody3D" type="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, -7.45058e-08, 0, 7.45058e-08, 1, 0, 0, 0)
+collision_layer = 0
+collision_mask = 926
+input_ray_pickable = false
+gravity_scale = 0.05
+max_contacts_reported = 1
+contact_monitor = true
+script = ExtResource("1_w4ubu")
+proj_headshot_multiplier = 0.0
+bullet = true
+explodes = false
+fuse_on_impact = false
+projectile_speed = 0.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_q35d3")
+disabled = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 3, 0, 0, 0, 1, 0, 1.16827, -8.70437e-08)
+mesh = SubResource("TorusMesh_7u8m6")
+
+[node name="contact explosion" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 960
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="contact explosion"]
+shape = SubResource("SphereShape3D_brctt")
+disabled = true
+
+[node name="explosionRadius" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 960
+input_ray_pickable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="explosionRadius"]
+shape = SubResource("SphereShape3D_dv3pt")
+disabled = true
+
+[node name="fuse_timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[node name="timeout_timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_txie8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="area_entered" from="contact explosion" to="." method="_on_contact_explosion_area_entered"]
+[connection signal="timeout" from="fuse_timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="timeout_timer" to="." method="_on_timer_timeout"]

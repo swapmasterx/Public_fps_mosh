@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Buff" load_steps=2 format=3 uid="uid://c1ct3vx22fxn8"]
+
+[ext_resource type="Script" path="res://character and weapons/buffs/buff_script.gd" id="1_gouus"]
+
+[resource]
+script = ExtResource("1_gouus")
+name = ""
+headshot_multiplier_bonus = 1.0
+damage_multiplier = 1.0
+attack_speed_multiplier = 1.0
+infinite_ammo = false
+damage_taken_mult = 1.0
+dot_duration = 0.0
+dot_damage = 0.0
+dot_damage_rate = 0.0
+move_speed_mult = 1.0
+jump_hight_mult = 1.0

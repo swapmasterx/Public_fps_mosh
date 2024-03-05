@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="WeaponStats" load_steps=4 format=3 uid="uid://b68g478q1frwu"]
+
+[ext_resource type="PackedScene" uid="uid://43asvjsglnhk" path="res://character and weapons/classes/Roamer/Axel/character_components/tal_projectile_test.tscn" id="1_4g2qh"]
+[ext_resource type="Resource" uid="uid://qagodnkk687c" path="res://character and weapons/classes/Pick/Rose_man/character_componets/thorn_flint_rose_reset_buff.tres" id="1_bek77"]
+[ext_resource type="Script" path="res://character and weapons/character_base/weaponstats.gd" id="2_xfmts"]
+
+[resource]
+script = ExtResource("2_xfmts")
+name = "Flint Rose"
+weapon_slot = 1
+is_primary = false
+can_manually_reload = false
+fire_animation_call = "thorn_jab"
+reload_animation_call = ""
+breach_reload_animation_call = ""
+Type2 = 2
+breach_load = false
+breach_load_count = 1
+spread_random = 0
+projectileToLoad = ExtResource("1_4g2qh")
+projectileSpeed = 60
+rangeValue = 3
+recoil_enabled = false
+damage = 600.0
+damage_maxFalloff = 600.0
+blast_damage = 0.0
+headshot_multiplier = 1.25
+max_ammo = 1
+ammo = 1
+ammo_per_shot = 1
+projectiles_per_shot = 1
+firing_type = 1
+reload_speed = 0.05
+firing_speed = 0.0
+min_firing_speed = 0.0
+max_firing_speed = 0.0
+RPM_speed_ramp = 0.0
+ability_duration = 0.55
+damage_falloff_start = 1
+damage_falloff_end = 8
+crit_hit_effect = ExtResource("1_bek77")
+uses_melee_box = false
+melee_box_duration = 0.3
+Passive_lockout_check = false
+Primary_lockout_check = false
+AltFire_lockout_check = false
+Ability1_lockout_check = true
+Ability2_lockout_check = true
+burstfire_delay = 0.0
+burstfire_lockout = 0.0
+burstfire_shot_count = 0
+vertical_angle = 5.0
+horizontal_angle = 0.05
+min_recoil_amount = 1.0
+max_recoil_amount = 2.0
+recoil_recovery_speed = 5.0

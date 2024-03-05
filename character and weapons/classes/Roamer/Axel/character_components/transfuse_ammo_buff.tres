@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Buff" load_steps=2 format=3 uid="uid://cgxjkblvxu7kt"]
+
+[ext_resource type="Script" path="res://character and weapons/buffs/buff_script.gd" id="1_j0tol"]
+
+[resource]
+script = ExtResource("1_j0tol")
+name = "Overdrive"
+duration = 2.5
+headshot_multiplier_bonus = 0.0
+damage_multiplier = 0.2
+attack_speed_multiplier = 0.0
+infinite_ammo = false
+self_damage = 100.0
+damage_taken_mult = 0.0
+dot_damage = 10.0
+move_speed_mult = 0.0
+jump_hight_mult = 0.0
+grounded_dash_active = false
+directional_dash_active = false
+leap_active = false
+omni_dash_active = false
+dash_time = 0.0
+dash_speed = 0.0

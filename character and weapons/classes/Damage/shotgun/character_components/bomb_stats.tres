@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="WeaponStats" load_steps=3 format=3 uid="uid://c1hb6nxx73mx5"]
+
+[ext_resource type="PackedScene" uid="uid://ca56l6klm3v86" path="res://character and weapons/classes/Damage/shotgun/character_components/bomb_projectile.tscn" id="1_b14bb"]
+[ext_resource type="Script" path="res://character and weapons/character_base/weaponstats.gd" id="2_88oes"]
+
+[resource]
+script = ExtResource("2_88oes")
+name = "grenade"
+weapon_slot = 2
+is_primary = false
+can_manually_reload = false
+fire_animation_call = ""
+reload_animation_call = ""
+breach_reload_animation_call = ""
+Type2 = 3
+breach_load = false
+breach_load_count = 1
+spread_random = 0
+projectileToLoad = ExtResource("1_b14bb")
+projectileSpeed = 5
+rangeValue = 2000
+recoil_enabled = false
+damage = 0.0
+damage_maxFalloff = 0.0
+blast_damage = 500.0
+headshot_multiplier = 0.0
+max_ammo = 1
+ammo = 1
+ammo_per_shot = 1
+projectiles_per_shot = 1
+firing_type = 1
+reload_speed = 1.95
+firing_speed = 0.2
+min_firing_speed = 0.0
+max_firing_speed = 0.0
+RPM_speed_ramp = 0.0
+ability_duration = 0.05
+damage_falloff_start = 0
+damage_falloff_end = 0
+AoE_falloff_start = 1.25
+AoE_falloff_end = 2.0
+AoE_falloff_reduction = 50.0
+uses_melee_box = false
+melee_box_duration = 0.3
+Passive_lockout_check = false
+Primary_lockout_check = false
+AltFire_lockout_check = false
+Ability1_lockout_check = true
+Ability2_lockout_check = true
+burstfire_delay = 0.0
+burstfire_lockout = 0.0
+burstfire_shot_count = 0
+vertical_angle = 5.0
+horizontal_angle = 1.0
+min_recoil_amount = 5.0
+max_recoil_amount = 5.0
+recoil_recovery_speed = 5.0

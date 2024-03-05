@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="WeaponStats" load_steps=4 format=3 uid="uid://bhc15tqshqa8c"]
+
+[ext_resource type="PackedScene" uid="uid://fyd5l4mslhys" path="res://character and weapons/classes/Pick/Rose_man/character_componets/rosette_ring_projectile.tscn" id="1_546tu"]
+[ext_resource type="Resource" uid="uid://c87qcewo4nium" path="res://character and weapons/classes/Pick/Rose_man/character_componets/Ros_ring_buff.tres" id="1_chulo"]
+[ext_resource type="Script" path="res://character and weapons/character_base/weaponstats.gd" id="2_0x0xk"]
+
+[resource]
+script = ExtResource("2_0x0xk")
+name = "Rosette Ring"
+weapon_slot = 4
+is_primary = false
+can_manually_reload = false
+fire_animation_call = ""
+reload_animation_call = ""
+breach_reload_animation_call = ""
+Type2 = 3
+breach_load = false
+breach_load_count = 1
+buff_handler_1 = ExtResource("1_chulo")
+spread_random = 0
+projectileToLoad = ExtResource("1_546tu")
+projectileSpeed = 0
+rangeValue = 2000
+recoil_enabled = false
+damage = 0.0
+damage_maxFalloff = 0.0
+blast_damage = 0.0
+headshot_multiplier = 0.0
+max_ammo = 1
+ammo = 1
+ammo_per_shot = 1
+projectiles_per_shot = 1
+firing_type = 4
+reload_speed = 20.0
+firing_speed = 0.2
+min_firing_speed = 0.0
+max_firing_speed = 0.0
+RPM_speed_ramp = 0.0
+ability_duration = 0.2
+damage_falloff_start = 0
+damage_falloff_end = 0
+uses_melee_box = false
+melee_box_duration = 0.4
+Passive_lockout_check = false
+Primary_lockout_check = true
+AltFire_lockout_check = true
+Ability1_lockout_check = true
+Ability2_lockout_check = false
+burstfire_delay = 0.0
+burstfire_lockout = 0.0
+burstfire_shot_count = 0
+vertical_angle = 5.0
+horizontal_angle = 1.0
+min_recoil_amount = 5.0
+max_recoil_amount = 5.0
+recoil_recovery_speed = 5.0

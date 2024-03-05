@@ -1,0 +1,752 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1709608214
+bul_decal_placeholder.tscn::PackedScene::167353083991826822::1706331764::0::1::::<><>::res://bul_hole_despawn.gd<>uid://45j13uywllpy::::res://game_core/ui/bullet_decal_debug.png
+bul_hole_despawn.gd::GDScript::-1::1705108886::0::1::::<>Node3D<>::
+character_menu.gd::GDScript::-1::1705458867::0::1::::<>Control<>::
+ground_placeholder.tscn::PackedScene::3327076889391884316::1705102263::0::1::::<><>::
+HealthComponent.gd::GDScript::-1::1709594644::0::1::::HealthComponent<>Node3D<>::
+health_component.tscn::PackedScene::5897908326202530837::1708921439::0::1::::<><>::res://HealthComponent.gd
+HitboxComponent.gd::GDScript::-1::1706234077::0::1::::DamageHitBox<>Area3D<>::
+hitbox_component.tscn::PackedScene::6576687933655327587::1705125060::0::1::::<><>::res://HitboxComponent.gd
+icon.svg::CompressedTexture2D::9111702160353251019::1704860572::1708302580::1::::<><>::
+README.md::TextFile::-1::1704860603::0::1::::<><>::
+test_dummy.gd::GDScript::-1::1709423124::0::1::::<>CharacterBody3D<>::
+test_dummy.tscn::PackedScene::4495507496239380128::1709606733::0::1::::<><>::res://test_dummy.gd<>uid://cqa8xn3lvt0v6::::res://health_component.tscn<>uid://dp0lk73knr3dt::::res://character and weapons/character_base/headbox.tscn<>uid://c0x2dbl3adufr::::res://hitbox_component.tscn
+::res://addons/::1709608071
+::res://addons/anim_player_refactor/::1709608066
+plugin.cfg::TextFile::-1::1705048827::0::1::::<><>::
+plugin.gd::GDScript::-1::1705048827::0::1::::<>EditorPlugin<>::
+::res://addons/anim_player_refactor/lib/::1709608066
+anim_player_refactor.gd::GDScript::-1::1705048827::0::1::::<>RefCounted<>::
+editor_util.gd::GDScript::-1::1705048827::0::1::::<>RefCounted<>::
+::res://addons/anim_player_refactor/scenes/::1709608066
+::res://addons/anim_player_refactor/scenes/autocomplete/::1709608066
+autocomplete.gd::GDScript::-1::1705048827::0::1::::<>CodeEdit<>::
+autocomplete_option.gd::GDScript::-1::1705048827::0::1::::<>OptionButton<>::
+::res://addons/anim_player_refactor/scenes/inspector_button/::1709608066
+inspector_button.gd::GDScript::-1::1705048828::0::1::::<>EditorInspectorPlugin<>::
+::res://addons/anim_player_refactor/scenes/refactor_dialogue/::1709608066
+refactor_dialogue.gd::GDScript::-1::1705048828::0::1::::<>AcceptDialog<>::
+refactor_dialogue.tscn::PackedScene::6469135804274071581::1705048828::0::1::::<><>::res://addons/anim_player_refactor/scenes/refactor_dialogue/refactor_dialogue.gd<>res://addons/anim_player_refactor/scenes/refactor_dialogue/components/anim_player_tree.gd<>res://addons/anim_player_refactor/scenes/refactor_dialogue/components/node_select.gd
+::res://addons/anim_player_refactor/scenes/refactor_dialogue/components/::1709608066
+anim_player_tree.gd::GDScript::-1::1705048828::0::1::::<>Tree<>::
+edit_info.gd::GDScript::-1::1705048828::0::1::::<>Object<>::
+node_select.gd::GDScript::-1::1705048828::0::1::::<>Tree<>::
+::res://addons/beehave/::1709608067
+blackboard.gd::GDScript::-1::1705082993::0::1::::Blackboard<>Node<>res://addons/beehave/icons/blackboard.svg::
+plugin.cfg::TextFile::-1::1705082995::0::1::::<><>::
+plugin.gd::GDScript::-1::1705082995::0::1::::<>EditorPlugin<>::
+::res://addons/beehave/debug/::1709608066
+debugger.gd::GDScript::-1::1705082993::0::1::::<>EditorDebuggerPlugin<>::
+debugger_messages.gd::GDScript::-1::1705082993::0::1::::BeehaveDebuggerMessages<>RefCounted<>::
+debugger_tab.gd::GDScript::-1::1705082993::0::1::::BeehaveDebuggerTab<>PanelContainer<>::
+frames.gd::GDScript::-1::1705082993::0::1::::<>RefCounted<>::
+global_debugger.gd::GDScript::-1::1705082993::0::1::::<>Node<>::
+graph_edit.gd::GDScript::-1::1705082993::0::1::::<>GraphEdit<>::
+graph_node.gd::GDScript::-1::1705082993::0::1::::<>GraphNode<>::
+tree_node.gd::GDScript::-1::1705082994::0::1::::TreeNode<>RefCounted<>::
+::res://addons/beehave/debug/icons/::1709608066
+horizontal_layout.svg::CompressedTexture2D::2402871655411330131::1705082993::1708302581::1::::<><>::
+port_bottom.svg::CompressedTexture2D::7217175080948403972::1705082993::1708302581::1::::<><>::
+port_left.svg::CompressedTexture2D::3340472120496126551::1705082993::1708302581::1::::<><>::
+port_right.svg::CompressedTexture2D::2481620690672730650::1705082993::1708302581::1::::<><>::
+port_top.svg::CompressedTexture2D::4000058125899369395::1705082993::1708302581::1::::<><>::
+vertical_layout.svg::CompressedTexture2D::3490232252841307079::1705082994::1708302581::1::::<><>::
+::res://addons/beehave/icons/::1709608067
+action.svg::CompressedTexture2D::3756133786918721016::1705082994::1708302581::1::::<><>::
+blackboard.svg::CompressedTexture2D::8770534558466881020::1705082994::1708302581::1::::<><>::
+category_bt.svg::CompressedTexture2D::1154176332224819161::1705082994::1708302581::1::::<><>::
+category_composite.svg::CompressedTexture2D::2381961395632050986::1705082994::1708302581::1::::<><>::
+category_decorator.svg::CompressedTexture2D::6684757642035352991::1705082994::1708302581::1::::<><>::
+category_leaf.svg::CompressedTexture2D::315336320686891357::1705082994::1708302581::1::::<><>::
+condition.svg::CompressedTexture2D::5535776259669095708::1705082994::1708302581::1::::<><>::
+cooldown.svg::CompressedTexture2D::17827654610800095::1705082994::1708302581::1::::<><>::
+delayer.svg::CompressedTexture2D::4952062570987909166::1705082994::1708302581::1::::<><>::
+failer.svg::CompressedTexture2D::1906024662373972763::1705082994::1708302581::1::::<><>::
+inverter.svg::CompressedTexture2D::5134861228321172739::1705082994::1708302581::1::::<><>::
+limiter.svg::CompressedTexture2D::7019533738093796894::1705082994::1708302581::1::::<><>::
+repeater.svg::CompressedTexture2D::1529242568923624235::1705082994::1708302581::1::::<><>::
+selector.svg::CompressedTexture2D::4287476541498692127::1705082994::1708302581::1::::<><>::
+selector_random.svg::CompressedTexture2D::3256135106851653793::1705082994::1708302581::1::::<><>::
+selector_reactive.svg::CompressedTexture2D::5986782346854105649::1705082994::1708302581::1::::<><>::
+sequence.svg::CompressedTexture2D::6892280340494522174::1705082994::1708302581::1::::<><>::
+sequence_random.svg::CompressedTexture2D::2427675312308490659::1705082994::1708302581::1::::<><>::
+sequence_reactive.svg::CompressedTexture2D::1218505720658478110::1705082994::1708302581::1::::<><>::
+succeeder.svg::CompressedTexture2D::7996697331577739266::1705082994::1708302581::1::::<><>::
+tree.svg::CompressedTexture2D::7476612271500237606::1705082994::1708302580::1::::<><>::
+until_fail.svg::CompressedTexture2D::7533634162483091068::1705082994::1708302580::1::::<><>::
+::res://addons/beehave/metrics/::1709608067
+beehave_global_metrics.gd::GDScript::-1::1705082994::0::1::::<>Node<>::
+::res://addons/beehave/nodes/::1709608067
+beehave_node.gd::GDScript::-1::1705082994::0::1::::BeehaveNode<>Node<>::
+beehave_tree.gd::GDScript::-1::1705082994::0::1::::BeehaveTree<>Node<>res://addons/beehave/icons/tree.svg::
+::res://addons/beehave/nodes/composites/::1709608067
+composite.gd::GDScript::-1::1705082994::0::1::::Composite<>BeehaveNode<>res://addons/beehave/icons/category_composite.svg::
+randomized_composite.gd::GDScript::-1::1705082994::0::1::::RandomizedComposite<>Composite<>::
+selector.gd::GDScript::-1::1705082994::0::1::::SelectorComposite<>Composite<>res://addons/beehave/icons/selector.svg::
+selector_random.gd::GDScript::-1::1705082994::0::1::::SelectorRandomComposite<>RandomizedComposite<>res://addons/beehave/icons/selector_random.svg::
+selector_reactive.gd::GDScript::-1::1705082994::0::1::::SelectorReactiveComposite<>Composite<>res://addons/beehave/icons/selector_reactive.svg::
+sequence.gd::GDScript::-1::1705082995::0::1::::SequenceComposite<>Composite<>res://addons/beehave/icons/sequence.svg::
+sequence_random.gd::GDScript::-1::1705082995::0::1::::SequenceRandomComposite<>RandomizedComposite<>res://addons/beehave/icons/sequence_random.svg::
+sequence_reactive.gd::GDScript::-1::1705082995::0::1::::SequenceReactiveComposite<>Composite<>res://addons/beehave/icons/sequence_reactive.svg::
+sequence_star.gd::GDScript::-1::1705082995::0::1::::SequenceStarComposite<>Composite<>res://addons/beehave/icons/sequence_reactive.svg::
+::res://addons/beehave/nodes/decorators/::1709608067
+cooldown.gd::GDScript::-1::1705082995::0::1::::CooldownDecorator<>Decorator<>res://addons/beehave/icons/cooldown.svg::
+decorator.gd::GDScript::-1::1705082995::0::1::::Decorator<>BeehaveNode<>res://addons/beehave/icons/category_decorator.svg::
+delayer.gd::GDScript::-1::1705082995::0::1::::DelayDecorator<>Decorator<>res://addons/beehave/icons/delayer.svg::
+failer.gd::GDScript::-1::1705082995::0::1::::AlwaysFailDecorator<>Decorator<>res://addons/beehave/icons/failer.svg::
+inverter.gd::GDScript::-1::1705082995::0::1::::InverterDecorator<>Decorator<>res://addons/beehave/icons/inverter.svg::
+limiter.gd::GDScript::-1::1705082995::0::1::::LimiterDecorator<>Decorator<>res://addons/beehave/icons/limiter.svg::
+repeater.gd::GDScript::-1::1705082995::0::1::::RepeaterDecorator<>Decorator<>res://addons/beehave/icons/repeater.svg::
+succeeder.gd::GDScript::-1::1705082995::0::1::::AlwaysSucceedDecorator<>Decorator<>res://addons/beehave/icons/succeeder.svg::
+time_limiter.gd::GDScript::-1::1705082995::0::1::::TimeLimiterDecorator<>Decorator<>res://addons/beehave/icons/limiter.svg::
+until_fail.gd::GDScript::-1::1705082995::0::1::::UntilFailDecorator<>Decorator<>res://addons/beehave/icons/until_fail.svg::
+::res://addons/beehave/nodes/leaves/::1709608067
+action.gd::GDScript::-1::1705082995::0::1::::ActionLeaf<>Leaf<>res://addons/beehave/icons/action.svg::
+blackboard_compare.gd::GDScript::-1::1705082995::0::1::::BlackboardCompareCondition<>ConditionLeaf<>::
+blackboard_erase.gd::GDScript::-1::1705082995::0::1::::BlackboardEraseAction<>ActionLeaf<>::
+blackboard_has.gd::GDScript::-1::1705082995::0::1::::BlackboardHasCondition<>ConditionLeaf<>::
+blackboard_set.gd::GDScript::-1::1705082995::0::1::::BlackboardSetAction<>ActionLeaf<>::
+condition.gd::GDScript::-1::1705082995::0::1::::ConditionLeaf<>Leaf<>res://addons/beehave/icons/condition.svg::
+leaf.gd::GDScript::-1::1705082995::0::1::::Leaf<>BeehaveNode<>res://addons/beehave/icons/category_leaf.svg::
+::res://addons/beehave/utils/::1709608067
+utils.gd::GDScript::-1::1705082995::0::1::::<>RefCounted<>::
+::res://addons/cyclops_level_builder/::1709608068
+cyclops_global_scene.gd::GDScript::-1::1702821676::0::1::::CyclopsGlobalScene<>Node3D<>::
+cyclops_global_scene.tscn::PackedScene::2073150474081295059::1704404994::0::1::::<><>::res://addons/cyclops_level_builder/cyclops_global_scene.gd<>uid://dejaio63tyi02::::res://addons/cyclops_level_builder/art/fonts/Roboto/Roboto-Regular.ttf<>res://addons/cyclops_level_builder/cyclops_overlay.gd
+cyclops_level_builder.gd::GDScript::-1::1704792214::0::1::::CyclopsLevelBuilder<>EditorPlugin<>::
+cyclops_overlay.gd::GDScript::-1::1702526284::0::1::::CyclopsOverlay<>Control<>::
+LICENSE.md::TextFile::-1::1684459656::0::1::::<><>::
+plugin.cfg::TextFile::-1::1684459656::0::1::::<><>::
+::res://addons/cyclops_level_builder/actions/::1709608067
+action_convert_to_mesh.gd::GDScript::-1::1704648848::0::1::::ActionConvertToMesh<>CyclopsAction<>::
+action_delete_selected_blocks.gd::GDScript::-1::1686432578::0::1::::ActionDeleteSelectedBlocks<>CyclopsAction<>::
+action_duplicate_selected_blocks.gd::GDScript::-1::1686432578::0::1::::ActionDuplicateSelectedBlocks<>CyclopsAction<>::
+action_export_as_gltf.gd::GDScript::-1::1688920612::0::1::::ActionExportAsGltf<>CyclopsAction<>::
+action_intersect_block.gd::GDScript::-1::1688952238::0::1::::ActionIntersectBlock<>CyclopsAction<>::
+action_merge_selected_blocks.gd::GDScript::-1::1686432578::0::1::::ActionMergeSelectedBlocks<>CyclopsAction<>::
+action_mirror_selection_x.gd::GDScript::-1::1684316608::0::1::::ActionMirrorSelectionX2<>ActionScaleSelection<>::
+action_mirror_selection_y.gd::GDScript::-1::1684316608::0::1::::ActionMirrorSelectionY2<>ActionScaleSelection<>::
+action_mirror_selection_z.gd::GDScript::-1::1684316608::0::1::::ActionMirrorSelectionZ<>ActionScaleSelection<>::
+action_rotate_selection.gd::GDScript::-1::1702817112::0::1::::ActionRotateSelection<>CyclopsAction<>::
+action_rotate_x_90_ccw.gd::GDScript::-1::1684316608::0::1::::ActionRotateX90Ccw<>ActionRotateSelection<>::
+action_rotate_x_90_cw.gd::GDScript::-1::1684316608::0::1::::ActionRotateX90Cw<>ActionRotateSelection<>::
+action_rotate_x_180.gd::GDScript::-1::1684316608::0::1::::ActionRotateX180<>ActionRotateSelection<>::
+action_rotate_y_90_ccw.gd::GDScript::-1::1684316608::0::1::::ActionRotateY90Ccw<>ActionRotateSelection<>::
+action_rotate_y_90_cw.gd::GDScript::-1::1684316608::0::1::::ActionRotateY90Cw<>ActionRotateSelection<>::
+action_rotate_y_180.gd::GDScript::-1::1684316608::0::1::::ActionRotateY180<>ActionRotateSelection<>::
+action_rotate_z_90_ccw.gd::GDScript::-1::1684316608::0::1::::ActionRotateZ90Ccw<>ActionRotateSelection<>::
+action_rotate_z_90_cw.gd::GDScript::-1::1684316608::0::1::::ActionRotateZ90Cw<>ActionRotateSelection<>::
+action_rotate_z_180.gd::GDScript::-1::1684316608::0::1::::ActionRotateZ180<>ActionRotateSelection<>::
+action_scale_selection.gd::GDScript::-1::1702817120::0::1::::ActionScaleSelection<>CyclopsAction<>::
+action_snap_to_grid.gd::GDScript::-1::1704733142::0::1::::ActionSnapToGrid<>CyclopsAction<>::
+action_subtract_block.gd::GDScript::-1::1688173780::0::1::::ActionSubtractBlock<>CyclopsAction<>::
+action_tool_duplicate.gd::GDScript::-1::1684316608::0::1::::ActionToolDuplicate<>CyclopsAction<>::
+cyclops_action.gd::GDScript::-1::1704731770::0::1::::CyclopsAction<>RefCounted<>::
+::res://addons/cyclops_level_builder/art/::1709608067
+cyclops1.png::CompressedTexture2D::5338622936022296340::1684459656::1708302581::1::::<><>::
+cyclops2.png::CompressedTexture2D::5856188741882765486::1684459656::1708302581::1::::<><>::
+cyclops.svg::CompressedTexture2D::1401467359761333559::1684459656::1708302581::1::::<><>::
+cyclops_3.png::CompressedTexture2D::6701808992584248134::1684459656::1708302581::1::::<><>::
+cyclops_4.png::CompressedTexture2D::5266357469125040417::1684459656::1708302581::1::::<><>::
+cyclops_16.png::CompressedTexture2D::643750411415749872::1684459656::1708302580::1::::<><>::
+cyclops_17.png::CompressedTexture2D::9024703356887323601::1684459656::1708302580::1::::<><>::
+cyclops_closed.png::CompressedTexture2D::5013379605297754435::1684459656::1708302580::1::::<><>::
+cyclops_open.png::CompressedTexture2D::1273484178441361920::1684459656::1708302580::1::::<><>::
+materialTest.glb::PackedScene::7599300410476000810::1684459656::1708302581::1::::<><>::
+::res://addons/cyclops_level_builder/art/fonts/::1709608067
+::res://addons/cyclops_level_builder/art/fonts/Roboto/::1709608067
+LICENSE.txt::TextFile::-1::1702526284::0::1::::<><>::
+Roboto-Black.ttf::FontFile::2633050044918710476::1702526284::1708302579::1::::<><>::
+Roboto-BlackItalic.ttf::FontFile::1302083633272910815::1702526284::1708302579::1::::<><>::
+Roboto-Bold.ttf::FontFile::3763509181186931887::1702526284::1708302579::1::::<><>::
+Roboto-BoldItalic.ttf::FontFile::4044120907734881109::1702526284::1708302579::1::::<><>::
+Roboto-Italic.ttf::FontFile::450638542225074455::1702526284::1708302579::1::::<><>::
+Roboto-Light.ttf::FontFile::3806951674805554766::1702526284::1708302579::1::::<><>::
+Roboto-LightItalic.ttf::FontFile::3822718781025027131::1702526284::1708302579::1::::<><>::
+Roboto-Medium.ttf::FontFile::6931830682536142173::1702526284::1708302579::1::::<><>::
+Roboto-MediumItalic.ttf::FontFile::2761600653353631349::1702526284::1708302579::1::::<><>::
+Roboto-Regular.ttf::FontFile::2798136210960524246::1702526284::1708302579::1::::<><>::
+Roboto-Thin.ttf::FontFile::1490374579520815088::1702526284::1708302579::1::::<><>::
+Roboto-ThinItalic.ttf::FontFile::7922634577574355376::1702526284::1708302579::1::::<><>::
+::res://addons/cyclops_level_builder/art/gizmos/::1709608067
+gizmo_rotate.glb::PackedScene::8546525302586095386::1702565596::1708302582::1::::<><>::
+gizmo_scale.glb::PackedScene::1164193309096597048::1693207980::1708302581::1::::<><>::
+gizmo_translate.glb::PackedScene::4876396055219895510::1693207980::1708302581::1::::<><>::
+::res://addons/cyclops_level_builder/art/icons/::1709608067
+block.svg::CompressedTexture2D::7258985351629459504::1684459656::1708302581::1::::<><>::
+create_cylinder.svg::CompressedTexture2D::3965287861967885588::1684459656::1708302581::1::::<><>::
+create_prism.svg::CompressedTexture2D::2131396985403037037::1684459656::1708302581::1::::<><>::
+create_stairs.svg::CompressedTexture2D::7875651375254388254::1684459656::1708302581::1::::<><>::
+edit_clip.svg::CompressedTexture2D::1513947975451067654::1684459656::1708302581::1::::<><>::
+material_brush.svg::CompressedTexture2D::4459498665807919960::1696412344::1708302581::1::::<><>::
+move.svg::CompressedTexture2D::5282807629782975786::1684459656::1708302581::1::::<><>::
+rotate.svg::CompressedTexture2D::6441062355999849902::1704490574::1708302581::1::::<><>::
+select_edge.svg::CompressedTexture2D::4260391683692681922::1684459656::1708302581::1::::<><>::
+select_face.svg::CompressedTexture2D::725302442492864298::1684459656::1708302581::1::::<><>::
+select_vertex.svg::CompressedTexture2D::258543084335661795::1684459656::1708302581::1::::<><>::
+snap.svg::CompressedTexture2D::8008482208373798059::1702526284::1708302581::1::::<><>::
+snap_grid.svg::CompressedTexture2D::7506429786845808694::1702526284::1708302581::1::::<><>::
+snap_vertex.svg::CompressedTexture2D::1830348137849151323::1702526284::1708302581::1::::<><>::
+uv_lock.svg::CompressedTexture2D::6936677243248938698::1696024842::1708302581::1::::<><>::
+xray_normal.svg::CompressedTexture2D::2732421408187109638::1695536182::1708302581::1::::<><>::
+::res://addons/cyclops_level_builder/art/textures/::1709608067
+checkerboard.png::CompressedTexture2D::3476177099578938862::1684459656::1708302581::1::::<><>::
+grid_cell2.png::CompressedTexture2D::1438935205315026217::1684459656::1708302581::1::::<><>::
+grid_cell.png::CompressedTexture2D::1052755713731055494::1684459656::1708302581::1::::<><>::
+vertex.png::CompressedTexture2D::8289906253392175026::1686432578::1708302581::1::::<><>::
+::res://addons/cyclops_level_builder/commands/::1709608068
+cmd_add_block.gd::GDScript::-1::1686432578::0::1::::CommandAddBlock<>CyclopsCommand<>::
+cmd_add_cylinder.gd::GDScript::-1::1686432578::0::1::::CommandAddCylinder<>CyclopsCommand<>::
+cmd_add_prism.gd::GDScript::-1::1686432578::0::1::::CommandAddPrism<>CyclopsCommand<>::
+cmd_add_stairs.gd::GDScript::-1::1686432578::0::1::::CommandAddStairs<>CyclopsCommand<>::
+cmd_add_vertices.gd::GDScript::-1::1686432578::0::1::::CommandAddVertices<>CyclopsCommand<>::
+cmd_clip_block.gd::GDScript::-1::1704374950::0::1::::CommandClipBlock<>CyclopsCommand<>::
+cmd_delete_blocks.gd::GDScript::-1::1686432578::0::1::::CommandDeleteBlocks<>CyclopsCommand<>::
+cmd_duplicate_blocks.gd::GDScript::-1::1704369050::0::1::::CommandDuplicateBlocks<>CyclopsCommand<>::
+cmd_intersect_block.gd::GDScript::-1::1704731786::0::1::::CommandIntersectBlock<>CyclopsCommand<>::
+cmd_merge_blocks.gd::GDScript::-1::1704788804::0::1::::CommandMergeBlocks<>CyclopsCommand<>::
+cmd_move_edges.gd::GDScript::-1::1686432578::0::1::::CommandMoveEdges<>CyclopsCommand<>::
+cmd_move_faces.gd::GDScript::-1::1686432578::0::1::::CommandMoveFaces<>CyclopsCommand<>::
+cmd_move_face_planar.gd::GDScript::-1::1686432578::0::1::::CommandMoveFacePlanar<>CyclopsCommand<>::
+cmd_move_vertices.gd::GDScript::-1::1704771498::0::1::::CommandMoveVertices<>CyclopsCommand<>::
+cmd_select_blocks.gd::GDScript::-1::1686432578::0::1::::CommandSelectBlocks<>CyclopsCommand<>::
+cmd_select_edges.gd::GDScript::-1::1686432578::0::1::::CommandSelectEdges<>CyclopsCommand<>::
+cmd_select_faces.gd::GDScript::-1::1686432578::0::1::::CommandSelectFaces<>CyclopsCommand<>::
+cmd_select_vertices.gd::GDScript::-1::1702526284::0::1::::CommandSelectVertices<>CyclopsCommand<>::
+cmd_set_face_color.gd::GDScript::-1::1696416152::0::1::::CommandSetFaceColor<>CyclopsCommand<>::
+cmd_set_face_uv_transform.gd::GDScript::-1::1691327898::0::1::::CommandSetFaceUvTransform<>CyclopsCommand<>::
+cmd_set_face_visible.gd::GDScript::-1::1691327182::0::1::::CommandSetFaceVisible<>CyclopsCommand<>::
+cmd_set_material.gd::GDScript::-1::1696418530::0::1::::CommandSetMaterial<>CyclopsCommand<>::
+cmd_snap_to_grid.gd::GDScript::-1::1704731808::0::1::::CommandSnapToGrid<>CyclopsCommand<>::
+cmd_subtract_block.gd::GDScript::-1::1704731840::0::1::::CommandSubtractBlock<>CyclopsCommand<>::
+cmd_transform_blocks.gd::GDScript::-1::1702820136::0::1::::CommandTransformBlocks<>CyclopsCommand<>::
+cmd_transform_vertices.gd::GDScript::-1::1704516246::0::1::::CommandTransformVertices<>CyclopsCommand<>::
+cyclops_command.gd::GDScript::-1::1702526284::0::1::::CyclopsCommand<>RefCounted<>::
+::res://addons/cyclops_level_builder/controls/::1709608068
+numeric_line_edit.gd::GDScript::-1::1704364398::0::1::::NumbericLineEdit<>PanelContainer<>::
+numeric_line_edit.tscn::PackedScene::7737370572335072349::1704366072::0::1::::<><>::res://addons/cyclops_level_builder/controls/numeric_line_edit.gd
+test_line_edit.gd::GDScript::-1::1702526284::0::1::::TestLineEdit<>Control<>::
+test_line_edit.tscn::PackedScene::3374102883968853484::1702526284::0::1::::<><>::res://addons/cyclops_level_builder/controls/test_line_edit.gd
+vector3_edit.gd::GDScript::-1::1702526284::0::1::::Vector3Edit<>HBoxContainer<>::
+vector3_edit.tscn::PackedScene::5841305619322742010::1702526284::0::1::::<><>::res://addons/cyclops_level_builder/controls/vector3_edit.gd<>uid://diibmlqy1mpqb::::res://addons/cyclops_level_builder/controls/numeric_line_edit.tscn
+vertex_billboard.gd::GDScript::-1::1686432578::0::1::::VertexBillboard<>Node3D<>::
+vertex_billboard.tscn::PackedScene::6226806473713343139::1702526284::0::1::::<><>::res://addons/cyclops_level_builder/controls/vertex_billboard.gd<>uid://rtk56g3h03nt::::res://addons/cyclops_level_builder/materials/vertex_active_material.tres
+::res://addons/cyclops_level_builder/controls/resource_inspector/::1709608068
+line_editor_bool.gd::GDScript::-1::1684459656::0::1::::LineEditorBool<>CheckBox<>::
+line_editor_bool.tscn::PackedScene::8239053109879180460::1702524192::0::1::::<><>::res://addons/cyclops_level_builder/controls/resource_inspector/line_editor_bool.gd
+line_editor_float.gd::GDScript::-1::1684459656::0::1::::LineEditorFloat<>SpinBox<>::
+line_editor_float.tscn::PackedScene::7642092431875444520::1702524192::0::1::::<><>::res://addons/cyclops_level_builder/controls/resource_inspector/line_editor_float.gd
+line_editor_int.gd::GDScript::-1::1684459656::0::1::::LineEditorInt<>SpinBox<>::
+line_editor_int.tscn::PackedScene::7714914202562798956::1702524192::0::1::::<><>::res://addons/cyclops_level_builder/controls/resource_inspector/line_editor_int.gd
+resource_inspector.gd::GDScript::-1::1684459656::0::1::::ResourceInspector<>Control<>::
+resource_inspector.tscn::PackedScene::6729863528294998586::1702524192::0::1::::<><>::res://addons/cyclops_level_builder/controls/resource_inspector/resource_inspector.gd
+::res://addons/cyclops_level_builder/data/::1709608068
+configuration.tres::Resource/Resource::4552822160491332919::1702736572::0::1::::<><>::res://addons/cyclops_level_builder/resources/cyclops_config.gd<>uid://dwxpsgoxb60yp::::res://addons/cyclops_level_builder/data/snapping_tags/snap_tag_grid.tres<>uid://rskdanqaqt1y::::res://addons/cyclops_level_builder/data/tool_tags/tool_tag_move.tres<>uid://beqrq2vlgidpe::::res://addons/cyclops_level_builder/data/snapping_tags/snap_tag_vertex.tres<>uid://c648hs1r46mat::::res://addons/cyclops_level_builder/data/tool_tags/tool_tag_create_block.tres<>uid://cihxgriu32oxb::::res://addons/cyclops_level_builder/data/tool_tags/tool_tag_create_prism.tres<>uid://p0ucaj6w232i::::res://addons/cyclops_level_builder/data/tool_tags/tool_tag_rotate.tres<>uid://wm5lu7jdndym::::res://addons/cyclops_level_builder/data/tool_tags/tool_tag_create_cylinder.tres<>uid://16f1nwimgn0p::::res://addons/cyclops_level_builder/data/tool_tags/tool_tag_create_stairs.tres<>uid://buod6sdg7c12l::::res://addons/cyclops_level_builder/data/tool_tags/tool_tag_clip.tres<>uid://ctj35x0jfg7ej::::res://addons/cyclops_level_builder/data/tool_tags/tool_tag_edit_vertex.tres<>uid://dub6oyal5fxly::::res://addons/cyclops_level_builder/data/tool_tags/tool_tag_edit_edge.tres<>uid://cmdgd8wmfdo4a::::res://addons/cyclops_level_builder/data/tool_tags/tool_tag_edit_face.tres<>uid://bjmuechy70058::::res://addons/cyclops_level_builder/data/tool_tags/tool_tag_material_brush.tres
+::res://addons/cyclops_level_builder/data/snapping_tags/::1709608068
+snap_tag_grid.tres::Resource/Resource::8751840536456137483::1702526284::0::1::::<><>::res://addons/cyclops_level_builder/snapping/snapping_tag.gd<>uid://c6mucdu7wcbkm::::res://addons/cyclops_level_builder/art/icons/snap_grid.svg<>res://addons/cyclops_level_builder/snapping/snapping_system_grid.gd
+snap_tag_vertex.tres::Resource/Resource::2701268314969167950::1702526284::0::1::::<><>::res://addons/cyclops_level_builder/snapping/snapping_tag.gd<>uid://c0x011okomj8n::::res://addons/cyclops_level_builder/art/icons/snap_vertex.svg<>res://addons/cyclops_level_builder/snapping/snapping_system_vertex.gd
+::res://addons/cyclops_level_builder/data/tool_tags/::1709608068
+tool_tag_clip.tres::Resource/Resource::3819337305970137497::1684316608::0::1::::<><>::uid://bos2j51dp4j1s::::res://addons/cyclops_level_builder/art/icons/edit_clip.svg<>res://addons/cyclops_level_builder/resources/tool_tag.gd<>res://addons/cyclops_level_builder/tools/tool_clip.gd
+tool_tag_create_block.tres::Resource/Resource::7010579622749172779::1684459656::0::1::::<><>::uid://bwasqbq4iqkn6::::res://addons/cyclops_level_builder/art/icons/block.svg<>res://addons/cyclops_level_builder/resources/tool_tag.gd<>res://addons/cyclops_level_builder/tools/tool_block.gd
+tool_tag_create_cylinder.tres::Resource/Resource::1570769346915564800::1684316608::0::1::::<><>::uid://0vye3ue3ayvf::::res://addons/cyclops_level_builder/art/icons/create_cylinder.svg<>res://addons/cyclops_level_builder/resources/tool_tag.gd<>res://addons/cyclops_level_builder/tools/tool_cylinder.gd
+tool_tag_create_prism.tres::Resource/Resource::5350210872568529503::1684316608::0::1::::<><>::uid://cbmwkjbju75er::::res://addons/cyclops_level_builder/art/icons/create_prism.svg<>res://addons/cyclops_level_builder/resources/tool_tag.gd<>res://addons/cyclops_level_builder/tools/tool_prism.gd
+tool_tag_create_stairs.tres::Resource/Resource::1889256377739074821::1684316608::0::1::::<><>::uid://bwq4w4vf8um1f::::res://addons/cyclops_level_builder/art/icons/create_stairs.svg<>res://addons/cyclops_level_builder/resources/tool_tag.gd<>res://addons/cyclops_level_builder/tools/tool_stairs.gd
+tool_tag_duplicate.tres::Resource/Resource::1243303597019257823::1684316608::0::1::::<><>::res://addons/cyclops_level_builder/resources/tool_tag.gd<>res://addons/cyclops_level_builder/tools/tool_duplicate.gd
+tool_tag_edit_edge.tres::Resource/Resource::8567011790584946258::1684316608::0::1::::<><>::uid://d2da2j8ve48rt::::res://addons/cyclops_level_builder/art/icons/select_edge.svg<>res://addons/cyclops_level_builder/resources/tool_tag.gd<>res://addons/cyclops_level_builder/tools/tool_edit_edge.gd
+tool_tag_edit_face.tres::Resource/Resource::5621672051451377274::1684316608::0::1::::<><>::uid://bi27fw31w4ssi::::res://addons/cyclops_level_builder/art/icons/select_face.svg<>res://addons/cyclops_level_builder/resources/tool_tag.gd<>res://addons/cyclops_level_builder/tools/tool_edit_face.gd
+tool_tag_edit_vertex.tres::Resource/Resource::6126763692983000433::1684316608::0::1::::<><>::uid://cwn58lev5oopd::::res://addons/cyclops_level_builder/art/icons/select_vertex.svg<>res://addons/cyclops_level_builder/resources/tool_tag.gd<>res://addons/cyclops_level_builder/tools/tool_edit_vertex.gd
+tool_tag_material_brush.tres::Resource/Resource::3044114409509615369::1696025934::0::1::::<><>::uid://dw8s7hrmnu34j::::res://addons/cyclops_level_builder/art/icons/material_brush.svg<>res://addons/cyclops_level_builder/resources/tool_tag.gd<>res://addons/cyclops_level_builder/tools/tool_material_brush.gd
+tool_tag_move.tres::Resource/Resource::1230981689539081752::1684316608::0::1::::<><>::uid://cqy2x1s41ypbt::::res://addons/cyclops_level_builder/art/icons/move.svg<>res://addons/cyclops_level_builder/resources/tool_tag.gd<>res://addons/cyclops_level_builder/tools/tool_move.gd
+tool_tag_rotate.tres::Resource/Resource::1105660025207351014::1702736044::0::1::::<><>::uid://1hu5mqwbm55w::::res://addons/cyclops_level_builder/art/icons/rotate.svg<>res://addons/cyclops_level_builder/resources/tool_tag.gd<>res://addons/cyclops_level_builder/tools/tool_rotate.gd
+::res://addons/cyclops_level_builder/docks/::1709608068
+::res://addons/cyclops_level_builder/docks/convex_face_editor/::1709608068
+convex_face_editor_preview.gd::GDScript::-1::1691332864::0::1::::ConvexFaceEditorPreview<>SubViewport<>::
+convex_face_editor_preview.tscn::PackedScene::2467323579116487398::1702526284::0::1::::<><>::res://addons/cyclops_level_builder/docks/convex_face_editor/convex_face_editor_preview.gd<>uid://rdhrhgrb78ls::::res://addons/cyclops_level_builder/materials/grid.tres<>uid://716oipfa7f5l::::res://addons/cyclops_level_builder/docks/convex_face_editor/convex_face_editor_preview_studio.tscn
+convex_face_editor_preview_studio.gd::GDScript::-1::1691332946::0::1::::ConvexFaceEditorPreviewStudio<>Node3D<>::
+convex_face_editor_preview_studio.tscn::PackedScene::2301624489500328443::1702524194::0::1::::<><>::res://addons/cyclops_level_builder/docks/convex_face_editor/convex_face_editor_preview_studio.gd
+convex_face_editor_viewport.gd::GDScript::-1::1691333158::0::1::::ConvexFaceEdtiorViewport<>Control<>::
+convex_face_editor_viewport.tscn::PackedScene::4005176058401051432::1702526284::0::1::::<><>::res://addons/cyclops_level_builder/docks/convex_face_editor/convex_face_editor_viewport.gd<>uid://diibmlqy1mpqb::::res://addons/cyclops_level_builder/controls/numeric_line_edit.tscn<>uid://bbfgpupliiqnm::::res://addons/cyclops_level_builder/docks/convex_face_editor/convex_face_editor_preview.tscn
+::res://addons/cyclops_level_builder/docks/cyclops_console/::1709608068
+cyclops_console.gd::GDScript::-1::1704313280::0::1::::CyclopsConsole<>Control<>::
+cyclops_console.tscn::PackedScene::143352357671028003::1703407882::0::1::::<><>::res://addons/cyclops_level_builder/docks/cyclops_console/cyclops_console.gd<>uid://cphtpklx81l3w::::res://addons/cyclops_level_builder/controls/vector3_edit.tscn
+::res://addons/cyclops_level_builder/docks/material_palette/::1709608068
+material_palette_viewport.gd::GDScript::-1::1684459656::0::1::::MaterialPaletteViewport<>Control<>::
+material_palette_viewport.tscn::PackedScene::1036570676893576714::1704375582::0::1::::<><>::res://addons/cyclops_level_builder/docks/material_palette/material_palette_viewport.gd<>res://addons/cyclops_level_builder/docks/material_palette/thumbnail_group.gd
+material_snapshot.gd::GDScript::-1::1684459656::0::1::::MaterialShapshot<>SubViewport<>::
+material_snapshot.tscn::PackedScene::8971473366283704766::1702524196::0::1::::<><>::res://addons/cyclops_level_builder/docks/material_palette/material_snapshot.gd<>uid://rdhrhgrb78ls::::res://addons/cyclops_level_builder/materials/grid.tres
+material_thumbnail.gd::GDScript::-1::1691336324::0::1::::MaterialThumbnail<>Control<>::
+material_thumbnail.tscn::PackedScene::7310861943008900834::1702526284::0::1::::<><>::res://addons/cyclops_level_builder/docks/material_palette/material_thumbnail.gd<>uid://c0gpl22e2g6ay::::res://addons/cyclops_level_builder/docks/material_palette/thumbnail_selected_theme.tres<>uid://bx26luxdhj3jq::::res://addons/cyclops_level_builder/docks/material_palette/thumbnail_normal_theme.tres
+thumbnail_group.gd::GDScript::-1::1684459656::0::1::::ThumbnailGroup<>Resource<>::
+thumbnail_normal_theme.tres::Theme::4058405243379725578::1709593931::0::1::::<><>::
+thumbnail_selected_theme.tres::Theme::6540880583544088756::1709593931::0::1::::<><>::
+::res://addons/cyclops_level_builder/docks/material_palette/commands/::1709608068
+cmd_mat_dock_add_materials.gd::GDScript::-1::1684459656::0::1::::CommandMaterialDockAddMaterials<>CyclopsCommand<>::
+cmd_mat_dock_remove_materials.gd::GDScript::-1::1684459656::0::1::::CommandMaterialDockRemoveMaterials<>CyclopsCommand<>::
+::res://addons/cyclops_level_builder/docks/snapping_properties/::1709608068
+snapping_properties_dock.gd::GDScript::-1::1702526284::0::1::::SnappingPropertiesDock<>Control<>::
+snapping_properties_dock.tscn::PackedScene::6232824461858925742::1702526284::0::1::::<><>::res://addons/cyclops_level_builder/docks/snapping_properties/snapping_properties_dock.gd
+::res://addons/cyclops_level_builder/docks/tool_properties/::1709608068
+tool_properties_dock.gd::GDScript::-1::1704375894::0::1::::ToolPropertiesDock<>Control<>::
+tool_properties_dock.tscn::PackedScene::4803251575721593226::1704375714::0::1::::<><>::res://addons/cyclops_level_builder/docks/tool_properties/tool_properties_dock.gd
+::res://addons/cyclops_level_builder/exporter/::1709608068
+exporter_gltf_wizard.gd::GDScript::-1::1688952224::0::1::::ExporterGltfWizard<>Window<>::
+exporter_gltf_wizard.tscn::PackedScene::6162906148013615898::1704797718::0::1::::<><>::res://addons/cyclops_level_builder/exporter/exporter_gltf_wizard.gd
+::res://addons/cyclops_level_builder/handles/::1709608068
+handle_edge.gd::GDScript::-1::1686432578::0::1::::HandleEdge<>RefCounted<>::
+handle_face.gd::GDScript::-1::1686432578::0::1::::HandleFace<>RefCounted<>::
+handle_vertex.gd::GDScript::-1::1684459656::0::1::::HandleVertex<>RefCounted<>::
+::res://addons/cyclops_level_builder/materials/::1709608068
+gizmo_axis_selected_material.tres::StandardMaterial3D::5128673596476544799::1693207982::0::1::::<><>::
+gizmo_axis_special_material.tres::StandardMaterial3D::5939686763075189717::1702738056::0::1::::<><>::
+gizmo_axis_x_material.tres::StandardMaterial3D::8381578609324276785::1702565252::0::1::::<><>::
+gizmo_axis_y_material.tres::StandardMaterial3D::3920920234377950445::1693207982::0::1::::<><>::
+gizmo_axis_z_material.tres::StandardMaterial3D::7765229894592829268::1693207982::0::1::::<><>::
+grid.tres::StandardMaterial3D::1199859230261790652::1684459656::0::1::::<><>::uid://bnlqi20ay4vs1::::res://addons/cyclops_level_builder/art/textures/grid_cell2.png<>uid://b78mg60xhic6n::::res://addons/cyclops_level_builder/art/textures/checkerboard.png
+outline_material.tres::ShaderMaterial::749169765283895681::1684459656::0::1::::<><>::uid://cc5tovf48xmg1::::res://addons/cyclops_level_builder/shaders/outline_shader.tres
+selection_rect_material.tres::StandardMaterial3D::6852176136926879099::1684459656::0::1::::<><>::
+test_materials.tscn::PackedScene::2036129964017855290::1702524196::0::1::::<><>::
+tool_edit_active_fill_material.tres::StandardMaterial3D::8695562753081693419::1704369518::0::1::::<><>::
+tool_edit_active_material.tres::StandardMaterial3D::8081221598229669384::1684459656::0::1::::<><>::
+tool_edit_selected_fill_material.tres::StandardMaterial3D::4334240765305570039::1704369574::0::1::::<><>::
+tool_edit_selected_material.tres::StandardMaterial3D::5652149393859704135::1684459656::0::1::::<><>::
+tool_edit_unselected_material.tres::StandardMaterial3D::362909524193551947::1684459656::0::1::::<><>::
+tool_material.tres::StandardMaterial3D::3298653537762554891::1684459656::0::1::::<><>::
+tool_object_active_material.tres::StandardMaterial3D::7336638514986448129::1684459656::0::1::::<><>::
+tool_object_selected_material.tres::StandardMaterial3D::3654022500316508913::1684459656::0::1::::<><>::
+vertex_active_material.tres::StandardMaterial3D::1233095901693740405::1691611936::0::1::::<><>::uid://dsvcm4kvcqlru::::res://addons/cyclops_level_builder/art/textures/vertex.png
+vertex_selected_material.tres::StandardMaterial3D::2455608802983809051::1699051380::0::1::::<><>::uid://dsvcm4kvcqlru::::res://addons/cyclops_level_builder/art/textures/vertex.png
+vertex_tool_material.tres::StandardMaterial3D::1287078772056862879::1691611954::0::1::::<><>::uid://dsvcm4kvcqlru::::res://addons/cyclops_level_builder/art/textures/vertex.png
+vertex_unselected_material.tres::StandardMaterial3D::8328871390638617792::1691611968::0::1::::<><>::uid://dsvcm4kvcqlru::::res://addons/cyclops_level_builder/art/textures/vertex.png
+::res://addons/cyclops_level_builder/math/::1709608068
+clip_poly_result.gd::GDScript::-1::1686432578::0::1::::ClipPolyResult<>RefCounted<>::
+convex_volume.gd::GDScript::-1::1704771644::0::1::::ConvexVolume<>RefCounted<>::
+data_vector.gd::GDScript::-1::1686432578::0::1::::DataVector<>RefCounted<>::
+face_packer.gd::GDScript::-1::1684459656::0::1::::FacePacker<>RefCounted<>::
+general_mesh.gd::GDScript::-1::1686432578::0::1::::GeneralMesh<>RefCounted<>::
+geometry_mesh.gd::GDScript::-1::1684459656::0::1::::GeometryMesh<>RefCounted<>::
+loop_2d.gd::GDScript::-1::1704513372::0::1::::Loop2D<>Resource<>::
+math_geometry.gd::GDScript::-1::1693207982::0::1::::MathGeometry<>RefCounted<>::
+math_util.gd::GDScript::-1::1704513910::0::1::::MathUtil<>RefCounted<>::
+quick_hull.gd::GDScript::-1::1684459656::0::1::::QuickHull<>RefCounted<>::
+segent_3.gd::GDScript::-1::1686432578::0::1::::Segment3<>RefCounted<>::
+::res://addons/cyclops_level_builder/menu/::1709608068
+action_popup_menu.gd::GDScript::-1::1684459656::0::1::::ActionPopupMenu<>PopupMenu<>::
+editor_toolbar.gd::GDScript::-1::1704375750::0::1::::EditorToolbar<>PanelContainer<>::
+editor_toolbar.tscn::PackedScene::6742984485542207434::1704383842::0::1::::<><>::res://addons/cyclops_level_builder/menu/editor_toolbar.gd<>res://addons/cyclops_level_builder/menu/action_popup_menu.gd<>uid://bs54uhn80ykrr::::res://addons/cyclops_level_builder/art/icons/xray_normal.svg<>uid://dloyvoq8piwx0::::res://addons/cyclops_level_builder/art/icons/snap.svg
+sticky_toolbar.gd::GDScript::-1::1684459656::0::1::::StickyToolbar<>Control<>::
+sticky_toolbar.tscn::PackedScene::6846210784298201372::1702524196::0::1::::<><>::res://addons/cyclops_level_builder/menu/sticky_toolbar.gd<>uid://d0krdms4l6ns4::::res://addons/cyclops_level_builder/art/cyclops_3.png<>uid://cg3yjatinkymb::::res://addons/cyclops_level_builder/art/cyclops_4.png
+upgrade_cyclops_blocks_toolbar.gd::GDScript::-1::1704651864::0::1::::UpgradeCyclopsBlocksToolbar<>PanelContainer<>::
+upgrade_cyclops_blocks_toolbar.tscn::PackedScene::1467349306968445073::1702524196::0::1::::<><>::res://addons/cyclops_level_builder/menu/upgrade_cyclops_blocks_toolbar.gd
+::res://addons/cyclops_level_builder/nodes/::1709608068
+cyclops_block.gd::GDScript::-1::1704648740::0::1::::CyclopsBlock<>Node3D<>::
+cyclops_blocks.gd::GDScript::-1::1686185040::0::1::::CyclopsBlocks<>Node3D<>::
+cyclops_blocks_icon.png::CompressedTexture2D::187758197157458981::1684459656::1708302580::1::::<><>::
+cyclops_blocks_icon.svg::CompressedTexture2D::680448651952936422::1684459656::1708302580::1::::<><>::
+cyclops_convex_block.gd::GDScript::-1::1686432578::0::1::::CyclopsConvexBlock<>Node<>::
+cyclops_convex_block_body.gd::GDScript::-1::1696006772::0::1::::CyclopsConvexBlockBody<>Node3D<>::
+intersect_results.gd::GDScript::-1::1702526286::0::1::::IntersectResults<>RefCounted<>::
+::res://addons/cyclops_level_builder/resources/::1709608068
+block_data.gd::GDScript::-1::1684459656::0::1::::BlockData<>Resource<>::
+convex_block_data.gd::GDScript::-1::1691325012::0::1::::ConvexBlockData<>Resource<>::
+cyclops_config.gd::GDScript::-1::1702526286::0::1::::CyclopsConfig<>Resource<>::
+tool_tag.gd::GDScript::-1::1684459656::0::1::::ToolTag<>Resource<>::
+::res://addons/cyclops_level_builder/shaders/::1709608068
+outline_shader.tres::VisualShader::4976330123338311102::1709593931::0::1::::<><>::
+tool_outline_shader.tres::VisualShader::6796597932207006307::1684459656::0::1::::<><>::
+vertex_shader.tres::Shader::7485550559320119999::1704797720::0::1::::<><>::
+::res://addons/cyclops_level_builder/snapping/::1709608068
+cyclops_snapping_system.gd::GDScript::-1::1704760056::0::1::::CyclopsSnappingSystem<>Resource<>::
+move_constraint.gd::GDScript::-1::1702526286::0::1::::MoveConstraint<>RefCounted<>::
+snapping_manager.gd::GDScript::-1::1704760032::0::1::::SnappingManager<>RefCounted<>::
+snapping_query.gd::GDScript::-1::1704765430::0::1::::SnappingQuery<>Resource<>::
+snapping_system_grid.gd::GDScript::-1::1704760144::0::1::::SnappingSystemGrid<>CyclopsSnappingSystem<>::
+snapping_system_grid_properties_editor.gd::GDScript::-1::1703145356::0::1::::SnappingSystemGridPropertiesEditor<>PanelContainer<>::
+snapping_system_grid_properties_editor.tscn::PackedScene::6663569440473127034::1703145704::0::1::::<><>::res://addons/cyclops_level_builder/snapping/snapping_system_grid_properties_editor.gd<>uid://diibmlqy1mpqb::::res://addons/cyclops_level_builder/controls/numeric_line_edit.tscn<>uid://cphtpklx81l3w::::res://addons/cyclops_level_builder/controls/vector3_edit.tscn
+snapping_system_vertex.gd::GDScript::-1::1704767260::0::1::::SnappintSystemVertex<>CyclopsSnappingSystem<>::
+snapping_system_vertex_properties_editor.gd::GDScript::-1::1704729954::0::1::::SnappingSystemVertexPropertiesEditor<>PanelContainer<>::
+snapping_system_vertex_properties_editor.tscn::PackedScene::4884472203741781442::1704729834::0::1::::<><>::res://addons/cyclops_level_builder/snapping/snapping_system_vertex_properties_editor.gd<>uid://diibmlqy1mpqb::::res://addons/cyclops_level_builder/controls/numeric_line_edit.tscn
+snapping_system_vertex_settings.gd::GDScript::-1::1704728492::0::1::::SnappingSystemVertexSettings<>Resource<>::
+snapping_tag.gd::GDScript::-1::1702526286::0::1::::SnappingTag<>Resource<>::
+snap_to_grid_util.gd::GDScript::-1::1704634424::0::1::::SnapToGridUtil<>Resource<>::
+::res://addons/cyclops_level_builder/tools/::1709608068
+cyclops_tool.gd::GDScript::-1::1704761762::0::1::::CyclopsTool<>Resource<>::
+tool_block.gd::GDScript::-1::1704761748::0::1::::ToolBlock<>CyclopsTool<>::
+tool_block_settings.gd::GDScript::-1::1704379472::0::1::::ToolBlockSettings<>Resource<>::
+tool_block_settings_editor.gd::GDScript::-1::1704364284::0::1::::ToolBlockSettingsEditor<>PanelContainer<>::
+tool_block_settings_editor.tscn::PackedScene::2390680490732672501::1704382660::0::1::::<><>::res://addons/cyclops_level_builder/tools/tool_block_settings_editor.gd<>uid://diibmlqy1mpqb::::res://addons/cyclops_level_builder/controls/numeric_line_edit.tscn
+tool_clip.gd::GDScript::-1::1704761392::0::1::::ToolClip<>CyclopsTool<>::
+tool_cylinder.gd::GDScript::-1::1704761450::0::1::::ToolCylinder<>CyclopsTool<>::
+tool_cylinder_settings.gd::GDScript::-1::1704379818::0::1::::ToolCylinderSettings<>Resource<>::
+tool_duplicate.gd::GDScript::-1::1704761464::0::1::::ToolDuplicate<>CyclopsTool<>::
+tool_edit_base.gd::GDScript::-1::1704377982::0::1::::ToolEditBase<>CyclopsTool<>::
+tool_edit_edge.gd::GDScript::-1::1704791920::0::1::::ToolEditEdge<>ToolEditBase<>::
+tool_edit_face.gd::GDScript::-1::1704791272::0::1::::ToolEditFace<>ToolEditBase<>::
+tool_edit_vertex.gd::GDScript::-1::1704772642::0::1::::ToolEditVertex<>ToolEditBase<>::
+tool_material_brush.gd::GDScript::-1::1704792108::0::1::::ToolMaterialBrush<>CyclopsTool<>::
+tool_material_brush_settings.gd::GDScript::-1::1704380036::0::1::::ToolMaterialBrushSettings<>Resource<>::
+tool_material_brush_settings_editor.gd::GDScript::-1::1696417350::0::1::::ToolMaterialBrushSettingsEditor<>PanelContainer<>::
+tool_material_brush_settings_editor.tscn::PackedScene::8575956791543928025::1702524196::0::1::::<><>::res://addons/cyclops_level_builder/tools/tool_material_brush_settings_editor.gd
+tool_move.gd::GDScript::-1::1704761610::0::1::::ToolMove<>CyclopsTool<>::
+tool_prism.gd::GDScript::-1::1704761646::0::1::::ToolPrism<>CyclopsTool<>::
+tool_prism_settings.gd::GDScript::-1::1704380086::0::1::::ToolPrismSettings<>Resource<>::
+tool_prism_settings_editor.gd::GDScript::-1::1704364762::0::1::::ToolPrismSettingsEditor<>PanelContainer<>::
+tool_prism_settings_editor.tscn::PackedScene::4677317251707831465::1704365186::0::1::::<><>::res://addons/cyclops_level_builder/tools/tool_prism_settings_editor.gd<>uid://diibmlqy1mpqb::::res://addons/cyclops_level_builder/controls/numeric_line_edit.tscn
+tool_rotate.gd::GDScript::-1::1704761898::0::1::::ToolRotate<>CyclopsTool<>::
+tool_stairs.gd::GDScript::-1::1704762022::0::1::::ToolStairs<>CyclopsTool<>::
+tool_stairs_settings.gd::GDScript::-1::1704380246::0::1::::ToolStairsSettings<>Resource<>::
+::res://addons/cyclops_level_builder/tools/gizmos/::1709608068
+gizmo_base.gd::GDScript::-1::1702588658::0::1::::GizmoBase<>Node3D<>::
+gizmo_rotate.gd::GDScript::-1::1702815688::0::1::::GizmoRotate<>GizmoBase<>::
+gizmo_rotate.tscn::PackedScene::6475683114629833866::1704661830::0::1::::<><>::uid://p26cj0m5amq0::::res://addons/cyclops_level_builder/art/gizmos/gizmo_rotate.glb<>res://addons/cyclops_level_builder/tools/gizmos/gizmo_rotate.gd<>uid://bv4k8o22vl6ub::::res://addons/cyclops_level_builder/materials/gizmo_axis_y_material.tres<>uid://drodm0wf41vin::::res://addons/cyclops_level_builder/materials/gizmo_axis_x_material.tres<>uid://divsg4lq712rw::::res://addons/cyclops_level_builder/materials/gizmo_axis_z_material.tres<>uid://cqvh1j2n71fej::::res://addons/cyclops_level_builder/materials/gizmo_axis_special_material.tres
+gizmo_test.gd::GDScript::-1::1693207982::0::1::::<>Node3D<>::
+gizmo_test.tscn::PackedScene::4091909906048074097::1702524196::0::1::::<><>::res://addons/cyclops_level_builder/tools/gizmos/gizmo_test.gd<>uid://2pi622xycrd6::::res://addons/cyclops_level_builder/tools/gizmos/gizmo_translate.tscn
+gizmo_translate.gd::GDScript::-1::1702588686::0::1::::GizmoTranslate<>GizmoBase<>::
+gizmo_translate.tscn::PackedScene::1926607001008312825::1704660526::0::1::::<><>::res://addons/cyclops_level_builder/tools/gizmos/gizmo_translate.gd<>uid://ujq3kes2sdfu::::res://addons/cyclops_level_builder/art/gizmos/gizmo_translate.glb<>uid://bv4k8o22vl6ub::::res://addons/cyclops_level_builder/materials/gizmo_axis_y_material.tres<>uid://divsg4lq712rw::::res://addons/cyclops_level_builder/materials/gizmo_axis_z_material.tres<>uid://drodm0wf41vin::::res://addons/cyclops_level_builder/materials/gizmo_axis_x_material.tres
+::res://addons/cyclops_level_builder/util/::1709608068
+collision.gd::GDScript::-1::1691330034::0::1::::Collision<>RefCounted<>::
+display_mode.gd::GDScript::-1::1696003438::0::1::::DisplayMode<>RefCounted<>::
+general_util.gd::GDScript::-1::1686185676::0::1::::GeneralUtil<>RefCounted<>::
+logger.gd::GDScript::-1::1686432580::0::1::::Logger<>RefCounted<>::
+selection.gd::GDScript::-1::1691330040::0::1::::Selection<>RefCounted<>::
+serial_util.gd::GDScript::-1::1704634424::0::1::::SerialUtil<>RefCounted<>::
+settings.gd::GDScript::-1::1702526286::0::1::::Settings<>Resource<>::
+tree_vistor.gd::GDScript::-1::1686432580::0::1::::TreeVisitor<>RefCounted<>::
+unit_system.gd::GDScript::-1::1702526286::0::1::::UnitSystem<>RefCounted<>::
+::res://addons/fpc/::1709608069
+character.gd::GDScript::-1::1709594338::0::1::::Playable_Character<>CharacterBody3D<>::
+character.tscn::PackedScene::4967669737419533591::1708388309::0::1::::<><>::res://addons/fpc/character.gd<>uid://3mij3cjhkwsm::::res://addons/fpc/reticles/reticle_1.tscn<>res://addons/fpc/debug.gd
+debug.gd::GDScript::-1::1707787945::0::1::::<>PanelContainer<>::
+::res://addons/fpc/reticles/::1709608069
+reticle_0.tscn::PackedScene::5789462669698072912::1704860603::0::1::::<><>::
+reticle_1.tscn::PackedScene::1990563437163004968::1708403497::0::1::::<><>::
+::res://addons/fps demo/::1706059253
+::res://addons/godot-jolt/::1709608070
+godot-jolt.gdextension::GDExtension::-1::1705048320::0::1::::<><>::
+LICENSE.txt::TextFile::-1::1705048321::0::1::::<><>::
+THIRDPARTY.txt::TextFile::-1::1705048321::0::1::::<><>::
+::res://addons/godot-jolt/android/::1709608069
+::res://addons/godot-jolt/ios/::1709608069
+::res://addons/godot-jolt/ios/godot-jolt_ios.framework/::1709608069
+::res://addons/godot-jolt/ios/godot-jolt_ios_editor.framework/::1709608069
+::res://addons/godot-jolt/linux/::1709608069
+::res://addons/godot-jolt/macos/::1709608069
+::res://addons/godot-jolt/macos/godot-jolt_macos.framework/::1709608069
+::res://addons/godot-jolt/macos/godot-jolt_macos.framework/Resources/::1709608069
+::res://addons/godot-jolt/macos/godot-jolt_macos.framework/_CodeSignature/::1709608069
+::res://addons/godot-jolt/macos/godot-jolt_macos_editor.framework/::1709608070
+::res://addons/godot-jolt/macos/godot-jolt_macos_editor.framework/Resources/::1709608070
+::res://addons/godot-jolt/macos/godot-jolt_macos_editor.framework/_CodeSignature/::1709608070
+::res://addons/godot-jolt/windows/::1709608185
+::res://addons/phantom_camera/::1709608071
+plugin.cfg::TextFile::-1::1707437994::0::1::::<><>::
+plugin.gd::GDScript::-1::1707437994::0::1::::<>EditorPlugin<>::
+::res://addons/phantom_camera/assets/::1709608070
+PhantomCameraBtnPrimaryDefault.png::CompressedTexture2D::5081567352117042767::1707437994::1708302580::1::::<><>::
+PhantomCameraBtnPrimaryHover.png::CompressedTexture2D::1097276340276520798::1707437994::1708302580::1::::<><>::
+::res://addons/phantom_camera/examples/::1709608070
+credits.txt::TextFile::-1::1707437994::0::1::::<><>::
+::res://addons/phantom_camera/examples/example_scenes/::1709608070
+::res://addons/phantom_camera/examples/example_scenes/2D/::1709608070
+2DExampleScene.tscn::PackedScene::8396109236837500942::1707437994::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2D.gd<>res://addons/phantom_camera/examples/scripts/2D/PlayerCharacterBody2D.gd<>uid://cwep0on2tthn7::::res://addons/phantom_camera/examples/textures/2D/PhantomCamera2DSprite.png<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/PlayerPhantomCamera2DTween.tres<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/UISign.tscn<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/UIInventory.tscn<>uid://cecrnq0wnkexh::::res://addons/phantom_camera/examples/resources/tween/ItemFocusPhantomCamera2DTween.tres<>uid://cllveybboaqk5::::res://addons/phantom_camera/examples/resources/tween/InventoryPhantomCamera2DTween.tres<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
+2DFollowFramedExampleScene.tscn::PackedScene::4041101467758950601::1707437994::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/UIInventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/UISign.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2D.gd<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/PlayerPhantomCamera2DTween.tres<>res://addons/phantom_camera/examples/scripts/2D/PlayerCharacterBody2D.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://cwep0on2tthn7::::res://addons/phantom_camera/examples/textures/2D/PhantomCamera2DSprite.png<>uid://cecrnq0wnkexh::::res://addons/phantom_camera/examples/resources/tween/ItemFocusPhantomCamera2DTween.tres<>uid://cllveybboaqk5::::res://addons/phantom_camera/examples/resources/tween/InventoryPhantomCamera2DTween.tres
+2DFollowGroupExampleScene.tscn::PackedScene::3615519047096694654::1707437994::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/UIInventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/UISign.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>uid://cwep0on2tthn7::::res://addons/phantom_camera/examples/textures/2D/PhantomCamera2DSprite.png<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2D.gd<>res://addons/phantom_camera/examples/scripts/2D/PlayerCharacterBody2D.gd<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/PlayerPhantomCamera2DTween.tres<>uid://cecrnq0wnkexh::::res://addons/phantom_camera/examples/resources/tween/ItemFocusPhantomCamera2DTween.tres<>uid://cllveybboaqk5::::res://addons/phantom_camera/examples/resources/tween/InventoryPhantomCamera2DTween.tres<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
+2DFollowPathExampleScene.tscn::PackedScene::1090052207262972448::1707437994::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/UIInventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/UISign.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2D.gd<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/PlayerPhantomCamera2DTween.tres<>res://addons/phantom_camera/examples/scripts/2D/PlayerCharacterBody2D.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://cwep0on2tthn7::::res://addons/phantom_camera/examples/textures/2D/PhantomCamera2DSprite.png<>uid://cecrnq0wnkexh::::res://addons/phantom_camera/examples/resources/tween/ItemFocusPhantomCamera2DTween.tres<>uid://cllveybboaqk5::::res://addons/phantom_camera/examples/resources/tween/InventoryPhantomCamera2DTween.tres
+2DLimitExampleScene.tscn::PackedScene::1601450723493897600::1707437994::0::1::::<><>::res://addons/phantom_camera/examples/scripts/2D/2d_room_limit_tween.gd<>uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/UIInventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/UISign.tscn<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2D.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>res://addons/phantom_camera/examples/scripts/2D/PlayerCharacterBody2D.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://cwep0on2tthn7::::res://addons/phantom_camera/examples/textures/2D/PhantomCamera2DSprite.png<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd
+2DTweeningExampleScene.tscn::PackedScene::5875330861835730161::1707437994::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/UIInventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/UISign.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2D.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/PlayerPhantomCamera2DTween.tres<>res://addons/phantom_camera/examples/scripts/2D/PlayerCharacterBody2D.gd<>uid://cwep0on2tthn7::::res://addons/phantom_camera/examples/textures/2D/PhantomCamera2DSprite.png<>res://addons/phantom_camera/examples/scripts/2D/2D_trigger_area.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
+::res://addons/phantom_camera/examples/example_scenes/3D/::1709608070
+3DExampleScene.tscn::PackedScene::5389709161117818686::1707437994::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/examples/scripts/3D/NPC.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3D.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3DPrototypeCubeDark.tscn<>uid://cptfoggk2ok67::::res://addons/phantom_camera/examples/resources/tween/PlayerPhantomCamera3DTween.tres<>res://addons/phantom_camera/examples/scripts/3D/3D_trigger_area.gd<>res://addons/phantom_camera/examples/scripts/3D/player_controller.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://c1v786g5agaw5::::res://addons/phantom_camera/examples/resources/tween/FixedCameraTween.tres
+3DFollowFramedExampleScene.tscn::PackedScene::6831697141640160960::1707437994::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3D.gd<>res://addons/phantom_camera/examples/scripts/3D/player_controller.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3DPrototypeCubeDark.tscn<>uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/CheckerPatternDark.png
+3DFollowGluedExampleScene.tscn::PackedScene::8760621557405770743::1707437994::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3D.gd<>res://addons/phantom_camera/examples/scripts/3D/player_controller.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3DPrototypeCubeDark.tscn<>uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/CheckerPatternDark.png
+3DFollowGroupExampleScene.tscn::PackedScene::7240303035488103663::1707437994::0::1::::<><>::uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3DPrototypeCubeDark.tscn<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3D.gd<>uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/CheckerPatternDark.png<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/examples/scripts/3D/player_controller.gd
+3DFollowPathExampleScene.tscn::PackedScene::8823052630826975221::1707437994::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/examples/scripts/3D/player_controller.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3D.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3DPrototypeCubeDark.tscn<>res://addons/phantom_camera/examples/scripts/3D/path_follow.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
+3DFollowSimpleExampleScene.tscn::PackedScene::3803289718966625666::1707437994::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3D.gd<>res://addons/phantom_camera/scripts/resources/camera_3D_resource.gd<>res://addons/phantom_camera/examples/scripts/3D/player_controller.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3DPrototypeCubeDark.tscn<>uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/CheckerPatternDark.png
+3DFollowThirdPersonExampleScene.tscn::PackedScene::2053817529390837519::1707437994::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3D.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3DPrototypeCubeDark.tscn<>res://addons/phantom_camera/scripts/resources/camera_3D_resource.gd<>res://addons/phantom_camera/examples/scripts/3D/player_controller_third_person.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
+3DLookAtExampleScene.tscn::PackedScene::2612475775293339696::1707437994::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3D.gd<>res://addons/phantom_camera/examples/scripts/3D/player_controller.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3DPrototypeCubeDark.tscn<>uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/CheckerPatternDark.png
+3DTweeningExampleScene.tscn::PackedScene::2154332734917685671::1707437994::0::1::::<><>::uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3DPrototypeCubeDark.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3D.gd<>res://addons/phantom_camera/examples/scripts/3D/player_controller.gd<>uid://cptfoggk2ok67::::res://addons/phantom_camera/examples/resources/tween/PlayerPhantomCamera3DTween.tres<>res://addons/phantom_camera/examples/scripts/3D/3D_trigger_area.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
+::res://addons/phantom_camera/examples/models/::1709608070
+3DPrototypeCubeDark.tscn::PackedScene::5382540856779240661::1707437994::0::1::::<><>::uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/CheckerPatternDark.png
+::res://addons/phantom_camera/examples/resources/::1709608070
+::res://addons/phantom_camera/examples/resources/tween/::1709608070
+FixedCameraTween.tres::Resource/Resource::6643106748633668090::1707437994::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd
+InventoryPhantomCamera2DTween.tres::Resource/Resource::5568910264892302066::1707437994::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd
+ItemFocusPhantomCamera2DTween.tres::Resource/Resource::5058781781655307589::1707437994::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd
+PlayerPhantomCamera2DTween.tres::Resource/Resource::9514768340188899::1707437994::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd
+PlayerPhantomCamera3DTween.tres::Resource/Resource::5865226110262250054::1707437994::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd
+::res://addons/phantom_camera/examples/scripts/::1709608070
+::res://addons/phantom_camera/examples/scripts/2D/::1709608070
+2d_room_limit_tween.gd::GDScript::-1::1707437994::0::1::::<>Node2D<>::
+2D_trigger_area.gd::GDScript::-1::1707437994::0::1::::<>Area2D<>::
+PlayerCharacterBody2D.gd::GDScript::-1::1707437994::0::1::::<>CharacterBody2D<>::
+::res://addons/phantom_camera/examples/scripts/3D/::1709608070
+3D_trigger_area.gd::GDScript::-1::1707437994::0::1::::<>Area3D<>::
+NPC.gd::GDScript::-1::1707437994::0::1::::<>Node3D<>::
+path_follow.gd::GDScript::-1::1707437994::0::1::::<>Node<>::
+player_controller.gd::GDScript::-1::1707437994::0::1::::<>CharacterBody3D<>::
+player_controller_third_person.gd::GDScript::-1::1707437994::0::1::::<><>::
+::res://addons/phantom_camera/examples/textures/::1709608070
+::res://addons/phantom_camera/examples/textures/2D/::1709608070
+inventory_container.png::CompressedTexture2D::4637741338914361246::1707437994::1708302580::1::::<><>::
+level_spritesheet.png::CompressedTexture2D::7085760997330170155::1707437994::1708302580::1::::<><>::
+PhantomCamera2DSprite.png::CompressedTexture2D::6326209594840534622::1707437994::1708302580::1::::<><>::
+sign_prompt.png::CompressedTexture2D::3188285415853117228::1707437994::1708302580::1::::<><>::
+::res://addons/phantom_camera/examples/textures/3D/::1709608070
+CheckerPatternDark.png::CompressedTexture2D::7037516729818178126::1707437994::1708302580::1::::<><>::
+::res://addons/phantom_camera/examples/ui/::1709608070
+UIInventory.tscn::PackedScene::7647500821014000442::1707437994::0::1::::<><>::uid://b7cs6me43ufh3::::res://addons/phantom_camera/examples/textures/2D/inventory_container.png<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
+UISign.tscn::PackedScene::596403574585461246::1707437994::0::1::::<><>::uid://bloouh2jtndx1::::res://addons/phantom_camera/examples/textures/2D/sign_prompt.png<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
+::res://addons/phantom_camera/fonts/::1709608071
+Nunito-Black.ttf::FontFile::6833869716374227054::1707437994::1708302579::1::::<><>::
+Nunito-Regular.ttf::FontFile::8643449995156224464::1707437994::1708302579::1::::<><>::
+::res://addons/phantom_camera/gizmos/::1709608071
+CustomGizmo.gd::GDScript::-1::1707437994::0::1::::CustomPluginGizmo<>EditorNode3DGizmoPlugin<>::
+phantom_camera_gizmo_plugin_3D.gd::GDScript::-1::1707437994::0::1::::<>CustomPluginGizmo<>::
+::res://addons/phantom_camera/icons/::1709608071
+Chevron.svg::CompressedTexture2D::1745133219077516325::1707437994::1708302580::1::::<><>::
+PhantomCameraGizmoIcon2D.svg::CompressedTexture2D::4629927649471389476::1707437994::1708302579::1::::<><>::
+PhantomCameraGizmoIcon3D.svg::CompressedTexture2D::1466881276638961705::1707437994::1708302579::1::::<><>::
+PhantomCameraGizmoIcon.svg::CompressedTexture2D::1247439452673462146::1707437994::1708302579::1::::<><>::
+PhantomCameraGlowLogo.png::CompressedTexture2D::5427785683244604059::1707437994::1708302579::1::::<><>::
+PhantomCameraHostIcon.svg::CompressedTexture2D::1569278523430150114::1707437994::1708302580::1::::<><>::
+PhantomCameraIcon2D.svg::CompressedTexture2D::7158192983046750063::1707437994::1708302580::1::::<><>::
+PhantomCameraIcon3D.svg::CompressedTexture2D::5118178094743450707::1707437994::1708302580::1::::<><>::
+PhantomCameraIcon.svg::CompressedTexture2D::4500271091572974045::1707437994::1708302580::1::::<><>::
+Pin.svg::CompressedTexture2D::3711434493768362550::1707437994::1708302580::1::::<><>::
+::res://addons/phantom_camera/icons/misc/::1709608071
+PriorityOverride.svg::CompressedTexture2D::8912176182624502929::1707437994::1708302580::1::::<><>::
+::res://addons/phantom_camera/icons/viewfinder/::1709608071
+Camera2DIcon.svg::CompressedTexture2D::4941179596290591277::1707437994::1708302580::1::::<><>::
+Camera3DIcon.svg::CompressedTexture2D::7877918109027130005::1707437994::1708302580::1::::<><>::
+SceneTypesIcon.svg::CompressedTexture2D::7928082713000371025::1707437994::1708302580::1::::<><>::
+::res://addons/phantom_camera/inspector/::1709608071
+phantom_camera_inspector_plugin.gd::GDScript::-1::1707437994::0::1::::<>EditorInspectorPlugin<>::
+::res://addons/phantom_camera/panel/::1709608071
+editor.gd::GDScript::-1::1707437994::0::1::::<>VBoxContainer<>::
+editor.tscn::PackedScene::5130828868618714074::1707437994::0::1::::<><>::res://addons/phantom_camera/panel/editor.gd<>uid://cuqkqsp3ikv5u::::res://addons/phantom_camera/panel/updater/UpdateButton.tscn<>uid://dbkr3d716wtx0::::res://addons/phantom_camera/panel/viewfinder/viewfinder_panel.tscn
+::res://addons/phantom_camera/panel/updater/::1709608071
+download_update_panel.tscn::PackedScene::4343775578160032417::1707437994::0::1::::<><>::res://addons/phantom_camera/scripts/panel/updater/download_update_panel.gd<>uid://cjli3p2b8mfyh::::res://addons/phantom_camera/icons/PhantomCameraGlowLogo.png<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://dve7mgsjik4dg::::res://addons/phantom_camera/fonts/Nunito-Regular.ttf<>uid://censw3w53gldn::::res://addons/phantom_camera/assets/PhantomCameraBtnPrimaryDefault.png
+UpdateButton.tscn::PackedScene::6210284996717618932::1707437994::0::1::::<><>::uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>res://addons/phantom_camera/scripts/panel/updater/update_button.gd<>uid://b25fl4usw0nlp::::res://addons/phantom_camera/panel/updater/download_update_panel.tscn
+::res://addons/phantom_camera/panel/viewfinder/::1709608071
+deadzone_style_box.tres::StyleBoxFlat::8214081647515075988::1707437997::0::1::::<><>::
+viewfinder_panel.tscn::PackedScene::7251177071591726931::1707437994::0::1::::<><>::res://addons/phantom_camera/scripts/panel/viewfinder/viewfinder.gd<>uid://dpa7yvxlq043a::::res://addons/phantom_camera/panel/viewfinder/deadzone_style_box.tres<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://b671h5enwiljg::::res://addons/phantom_camera/icons/PhantomCameraGizmoIcon2D.svg<>uid://dve7mgsjik4dg::::res://addons/phantom_camera/fonts/Nunito-Regular.ttf<>uid://dy8eifa6aw2en::::res://addons/phantom_camera/icons/misc/PriorityOverride.svg
+::res://addons/phantom_camera/scripts/::1709608071
+group_names.gd::GDScript::-1::1707437994::0::1::::<>RefCounted<>::
+::res://addons/phantom_camera/scripts/panel/::1709608071
+::res://addons/phantom_camera/scripts/panel/updater/::1709608071
+download_update_panel.gd::GDScript::-1::1707437994::0::1::::<>Control<>::
+update_button.gd::GDScript::-1::1707437994::0::1::::<>Button<>::
+::res://addons/phantom_camera/scripts/panel/viewfinder/::1709608071
+viewfinder.gd::GDScript::-1::1707437994::0::1::::<>Control<>::
+::res://addons/phantom_camera/scripts/phantom_camera/::1709608071
+phantom_camera_2D.gd::GDScript::-1::1707437994::0::1::::PhantomCamera2D<>Node2D<>res://addons/phantom_camera/icons/PhantomCameraIcon2D.svg::
+phantom_camera_3D.gd::GDScript::-1::1707437994::0::1::::PhantomCamera3D<>Node3D<>res://addons/phantom_camera/icons/PhantomCameraIcon3D.svg::
+phantom_camera_constants.gd::GDScript::-1::1707437994::0::1::::<>RefCounted<>::
+phantom_camera_properties.gd::GDScript::-1::1707437994::0::1::::<>RefCounted<>::
+::res://addons/phantom_camera/scripts/phantom_camera_host/::1709608071
+phantom_camera_host.gd::GDScript::-1::1707437994::0::1::::PhantomCameraHost<>Node<>res://addons/phantom_camera/icons/PhantomCameraHostIcon.svg::
+::res://addons/phantom_camera/scripts/resources/::1709608071
+camera_3D_resource.gd::GDScript::-1::1707437994::0::1::::Camera3DResource<>Resource<>::
+tween_resource.gd::GDScript::-1::1707437994::0::1::::PhantomCameraTween<>Resource<>::
+::res://addons/TweenSuite/::1709608071
+plugin.cfg::TextFile::-1::1707698982::0::1::::<><>::
+TweenAnimation.gd::GDScript::-1::1707698982::0::1::::TweenAnimation<>Resource<>uid://dp7rsgqw46he6::
+TweenNode.gd::GDScript::-1::1707698982::0::1::::TweenNode<>Node<>uid://brtn2nqtj48pj::
+::res://addons/TweenSuite/Icons/::1709608071
+TweenAnimation.svg::CompressedTexture2D::8279219467843551051::1707698982::1708302580::1::::<><>::
+TweenNode.svg::CompressedTexture2D::3619692448605084643::1707698982::1708302580::1::::<><>::
+::res://addons/TweenSuite/TweenAnimationEditor/::1709608071
+TweenAnimationEditor.gd::GDScript::-1::1707698982::0::1::::<>Control<>::
+TweenAnimationEditor.tscn::PackedScene::432039107437514192::1707698982::0::1::::<><>::res://addons/TweenSuite/TweenAnimationEditor/TweenAnimationEditor.gd
+TweenAnimationEditorBase.gd::GDScript::-1::1707698982::0::1::::<>Control<>::
+TweenAnimationEditorBase.tscn::PackedScene::8197372811074184244::1707698982::0::1::::<><>::res://addons/TweenSuite/TweenAnimationEditor/TweenAnimationEditorBase.gd<>uid://c5al8etaem6a6::::res://addons/TweenSuite/TweenAnimationEditor/GUIComponents/ObjectEdit.tscn<>res://addons/TweenSuite/TweenAnimationEditor/GUIComponents/EditorButton.gd
+TweenAnimationEditorPlugin.gd::GDScript::-1::1707698982::0::1::::<>EditorPlugin<>::
+::res://addons/TweenSuite/TweenAnimationEditor/EditorComponents/::1709608071
+AnimationStep.gd::GDScript::-1::1707698982::0::1::::<>Control<>::
+AnimationStep.tscn::PackedScene::4464020223271242014::1707698982::0::1::::<><>::res://addons/TweenSuite/TweenAnimationEditor/EditorComponents/AnimationStep.gd<>res://addons/TweenSuite/TweenAnimationEditor/GUIComponents/FormatLabel.gd<>res://addons/TweenSuite/TweenAnimationEditor/GUIComponents/EditorButton.gd
+TweenerEditor.gd::GDScript::-1::1707698982::0::1::::<>Control<>::
+TweenerEditor.tscn::PackedScene::3190164901663438746::1707698982::0::1::::<><>::res://addons/TweenSuite/TweenAnimationEditor/EditorComponents/TweenerEditor.gd<>res://addons/TweenSuite/TweenAnimationEditor/GUIComponents/FormatLabel.gd<>res://addons/TweenSuite/TweenAnimationEditor/GUIComponents/EditorButton.gd<>res://addons/TweenSuite/TweenAnimationEditor/GUIComponents/ExpressionEdit.gd<>uid://c5al8etaem6a6::::res://addons/TweenSuite/TweenAnimationEditor/GUIComponents/ObjectEdit.tscn
+::res://addons/TweenSuite/TweenAnimationEditor/GUIComponents/::1709608071
+EditorButton.gd::GDScript::-1::1707698982::0::1::::<>Button<>::
+ExpressionEdit.gd::GDScript::-1::1707698982::0::1::::<>LineEdit<>::
+FormatLabel.gd::GDScript::-1::1707698982::0::1::::<>Label<>::
+ObjectEdit.gd::GDScript::-1::1707698982::0::1::::<>Control<>::
+ObjectEdit.tscn::PackedScene::6879233734097003643::1707698982::0::1::::<><>::res://addons/TweenSuite/TweenAnimationEditor/GUIComponents/ObjectEdit.gd
+::res://addons/untrue/::1709608071
+game.gd::GDScript::-1::1707794373::0::1::::Game<>Object<>res://addons/untrue/icons/Game.svg::
+game_mode.gd::GDScript::-1::1707794373::0::1::::GameMode<>Resource<>res://addons/untrue/icons/Gamemode.svg::
+game_root.gd::GDScript::-1::1707794374::0::1::::GameRoot<>Node<>res://addons/untrue/icons/GameRoot.svg::
+level_root.gd::GDScript::-1::1707794374::0::1::::LevelRoot<>Node<>res://addons/untrue/icons/LevelRoot.svg::
+player_spawn_2d.gd::GDScript::-1::1707794374::0::1::::PlayerSpawn2D<>Node2D<>res://addons/untrue/icons/PlayerSpawn2D.svg::
+player_spawn_3d.gd::GDScript::-1::1707794374::0::1::::PlayerSpawn3D<>Node3D<>res://addons/untrue/icons/PlayerSpawn3D.svg::
+plugin.cfg::TextFile::-1::1707794374::0::1::::<><>::
+README.md::TextFile::-1::1707794373::0::1::::<><>::
+untrue.gd::GDScript::-1::1707794374::0::1::::<>EditorPlugin<>::
+::res://addons/untrue/icons/::1709608072
+Game.svg::CompressedTexture2D::1254345462116323132::1707794374::1708302580::1::::<><>::
+Gamemode.svg::CompressedTexture2D::6299659877120488916::1707794374::1708302580::1::::<><>::
+GameRoot.svg::CompressedTexture2D::7195911790888680349::1707794374::1708302580::1::::<><>::
+LevelRoot.svg::CompressedTexture2D::1765702459221202969::1707794374::1708302580::1::::<><>::
+PlayerSpawn2D.svg::CompressedTexture2D::600651275364023893::1707794374::1708302580::1::::<><>::
+PlayerSpawn3D.svg::CompressedTexture2D::2275114553344510324::1707794374::1708302580::1::::<><>::
+::res://character and weapons/::1709608073
+::res://character and weapons/buffs/::1709608072
+buff_script.gd::GDScript::-1::1709594324::0::1::::Buff<>Resource<>::
+buff_template.tres::Resource/Resource::6603084822358979247::1705726622::0::1::::<><>::res://character and weapons/buffs/buff_script.gd
+::res://character and weapons/bulletBase/::1709608072
+bullet_phys.gd::GDScript::-1::1706132447::0::1::::GenericProjectile<>RigidBody3D<>::
+explosive_base.tscn::PackedScene::4707870646718666937::1707703277::0::1::::<><>::res://character and weapons/bulletBase/explosive_base_script.gd
+explosive_base_script.gd::GDScript::-1::1709606294::0::1::::Projectile<>RigidBody3D<>::
+generic_projectile.tres::Resource/Resource::5327084196121798000::1705297397::0::1::::<><>::res://character and weapons/bulletBase/bullet_phys.gd
+generic_projectile_foundation.tscn::PackedScene::6889427498681572352::1707469896::0::1::::<><>::res://character and weapons/bulletBase/bullet_phys.gd
+::res://character and weapons/character_base/::1709608073
+ability_slot.gd::GDScript::-1::1705818310::0::1::::baseweapon<>Node<>::
+base_gun_noded.gd::GDScript::-1::1709605997::0::1::::WeaponSlot<>Node3D<>::
+bullet_debug.tscn::PackedScene::4677693170280116881::1708906219::0::1::::<><>::uid://45j13uywllpy::::res://game_core/ui/bullet_decal_debug.png<>res://character and weapons/character_base/decal_lifespan.gd
+cameraRay.gd::GDScript::-1::1706137369::0::1::::<>Camera3D<>::
+decal_lifespan.gd::GDScript::-1::1706229377::0::1::::<>Sprite3D<>::
+headbox.gd::GDScript::-1::1706234077::0::1::::HeadHitBox<>Area3D<>::
+headbox.tscn::PackedScene::8264391618834918913::1705798437::0::1::::<><>::res://character and weapons/character_base/headbox.gd
+healthBar.gd::GDScript::-1::1705368363::0::1::::<>TextureProgressBar<>::
+maxHP_bars.gd::GDScript::-1::1705447328::0::1::::<>TextureRect<>::
+weaponstats.gd::GDScript::-1::1709605997::0::1::::WeaponStats<>Resource<>::
+weponstats.tres::Resource::3111512162852069942::1705804849::0::1::::<><>::res://character and weapons/character_base/weaponstats.gd
+::res://character and weapons/classes/::1709608074
+::res://character and weapons/classes/Brute/::1707863852
+::res://character and weapons/classes/Damage/::1709608073
+::res://character and weapons/classes/Damage/shotgun/::1709608073
+fake_shotty_demo.tscn::PackedScene::-1::1708313834::0::1::::<><>::
+shotty_demo.tscn::PackedScene::3345249585966119243::1709607888::0::1::::<><>::res://addons/fpc/character.gd<>uid://dp0lk73knr3dt::::res://character and weapons/character_base/headbox.tscn<>res://character and weapons/classes/tool_slots/character_controls.gd<>uid://cl5ukcgj2gdes::::res://character and weapons/classes/Damage/shotgun/character_components/shotty.tscn<>uid://u8suncqvqa3v::::res://character and weapons/classes/Damage/shotgun/character_components/bomb.tscn<>uid://dsoy2cyqyj2uu::::res://character and weapons/classes/Damage/shotgun/shotty_modelnTextures/shottygun_shotty_textures_4K_Color.jpg<>uid://carf2joscmu5c::::res://game_core/ui/menus/player_ui.tscn<>uid://c0x2dbl3adufr::::res://hitbox_component.tscn<>uid://onk10d1uyg17::::res://character and weapons/classes/Damage/shotgun/character_components/bouncy grenade.tscn<>uid://dfo8p4di0h8aw::::res://character and weapons/classes/Damage/shotgun/shotty_modelnTextures/shottygun_shotty_textures_4K_Roughness.jpg<>uid://c25278fiabgjd::::res://character and weapons/classes/Damage/shotgun/character_components/RAAAAAHHHH.tscn<>uid://cqa8xn3lvt0v6::::res://health_component.tscn<>res://character and weapons/classes/tool_slots/ability_lockout_handler.gd<>uid://3mij3cjhkwsm::::res://addons/fpc/reticles/reticle_1.tscn<>uid://dhad6cta4qvxb::::res://character and weapons/classes/Damage/shotgun/character_components/shotty_stats.tres<>res://addons/fpc/debug.gd<>uid://c1hb6nxx73mx5::::res://character and weapons/classes/Damage/shotgun/character_components/bomb_stats.tres<>uid://cg5o867v1bgjd::::res://character and weapons/classes/Damage/shotgun/character_components/bouncy_grenade_stats.tres<>uid://cg5yrrmh8ob6j::::res://character and weapons/classes/Damage/shotgun/character_components/RAAAAAHHHH_stats.tres
+::res://character and weapons/classes/Damage/shotgun/character_components/::1709608073
+bomb.tscn::PackedScene::1473030647041334941::1708311862::0::1::::<><>::res://character and weapons/character_base/base_gun_noded.gd<>uid://c1hb6nxx73mx5::::res://character and weapons/classes/Damage/shotgun/character_components/bomb_stats.tres
+bomb_projectile.tscn::PackedScene::4836676214705559893::1709606734::0::1::::<><>::res://character and weapons/bulletBase/explosive_base_script.gd
+bomb_stats.tres::Resource/WeaponStats::6612318742280226908::1709606570::0::1::::<><>::uid://ca56l6klm3v86::::res://character and weapons/classes/Damage/shotgun/character_components/bomb_projectile.tscn<>res://character and weapons/character_base/weaponstats.gd
+bouncy grenade.tscn::PackedScene::1010135641231588140::1708311862::0::1::::<><>::res://character and weapons/character_base/base_gun_noded.gd<>uid://cg5o867v1bgjd::::res://character and weapons/classes/Damage/shotgun/character_components/bouncy_grenade_stats.tres
+bouncy_grenade_projectile.tscn::PackedScene::1923345579053329046::1709350033::0::1::::<><>::res://character and weapons/bulletBase/explosive_base_script.gd
+bouncy_grenade_stats.tres::Resource/Resource::5256816409580312725::1708404243::0::1::::<><>::uid://2nxhrdyifkag::::res://character and weapons/classes/Damage/shotgun/character_components/bouncy_grenade_projectile.tscn<>res://character and weapons/character_base/weaponstats.gd
+RAAAAAHHHH self slow.tres::Resource/Resource::4803287852202851826::1708391044::0::1::::<><>::res://character and weapons/buffs/buff_script.gd
+RAAAAAHHHH.tscn::PackedScene::6731569723802627733::1708726120::0::1::::<><>::res://character and weapons/character_base/base_gun_noded.gd<>uid://cg5yrrmh8ob6j::::res://character and weapons/classes/Damage/shotgun/character_components/RAAAAAHHHH_stats.tres
+RAAAAAHHHH_projectile.tscn::PackedScene::6653883219050508295::1709606734::0::1::::<><>::res://character and weapons/bulletBase/explosive_base_script.gd
+RAAAAAHHHH_stats.tres::Resource/WeaponStats::5257394239956273035::1709606571::0::1::::<><>::uid://c12gqqb0b4ea6::::res://character and weapons/classes/Damage/shotgun/character_components/RAAAAAHHHH_projectile.tscn<>uid://cao0pjhwgr1ba::::res://character and weapons/classes/Damage/shotgun/character_components/RAAAAAHHHH self slow.tres<>res://character and weapons/character_base/weaponstats.gd
+shotty.tscn::PackedScene::5608082292581495974::1709531227::0::1::::<><>::res://character and weapons/character_base/base_gun_noded.gd<>uid://dhad6cta4qvxb::::res://character and weapons/classes/Damage/shotgun/character_components/shotty_stats.tres
+shotty_stats.tres::Resource/WeaponStats::7650821601572272883::1709606711::0::1::::<><>::uid://43asvjsglnhk::::res://character and weapons/classes/Roamer/Axel/character_components/tal_projectile_test.tscn<>res://character and weapons/character_base/weaponstats.gd
+::res://character and weapons/classes/Damage/shotgun/shotty_modelnTextures/::1709608073
+shottygun.glb::PackedScene::6575823717878830494::1709531050::1709531068::1::::<><>::
+shottygun_editable_modelMaybe.tscn::PackedScene::4840911484647684694::1709531443::0::1::::<><>::uid://dsoy2cyqyj2uu::::res://character and weapons/classes/Damage/shotgun/shotty_modelnTextures/shottygun_shotty_textures_4K_Color.jpg<>uid://dfo8p4di0h8aw::::res://character and weapons/classes/Damage/shotgun/shotty_modelnTextures/shottygun_shotty_textures_4K_Roughness.jpg
+shottygun_Image.jpg::CompressedTexture2D::885054881050549064::1709531062::1709531067::1::::<><>::
+shottygun_shotty_textures_4K_Color.jpg::CompressedTexture2D::8453068092263981040::1709531055::1709531069::1::::<><>::
+shottygun_shotty_textures_4K_Roughness.jpg::CompressedTexture2D::7541139533704941218::1709531060::1709531069::1::::<><>::
+::res://character and weapons/classes/Objective/::1707863862
+::res://character and weapons/classes/Pick/::1709608073
+::res://character and weapons/classes/Pick/Rose_man/::1709608073
+::res://character and weapons/classes/Pick/Rose_man/character_componets/::1709608074
+Flint_rose.tscn::PackedScene::4297419024465958654::1709336082::0::1::::<><>::res://character and weapons/character_base/base_gun_noded.gd<>uid://dyxq7f3nxebmd::::res://character and weapons/classes/Pick/Rose_man/character_componets/flint_rose_stats.tres
+flint_rose_stats.tres::Resource/Resource::8892303910517504719::1709137811::0::1::::<><>::uid://43asvjsglnhk::::res://character and weapons/classes/Roamer/Axel/character_components/tal_projectile_test.tscn<>res://character and weapons/character_base/weaponstats.gd
+rosette_ring.tscn::PackedScene::7971856724895956804::1709336082::0::1::::<><>::res://character and weapons/character_base/base_gun_noded.gd<>uid://bhc15tqshqa8c::::res://character and weapons/classes/Pick/Rose_man/character_componets/rosette_ring_stats.tres
+rosette_ring_projectile.tscn::PackedScene::400725632208942870::1709350005::0::1::::<><>::res://character and weapons/bulletBase/explosive_base_script.gd
+rosette_ring_stats.tres::Resource/Resource::2883504583784867604::1709081727::0::1::::<><>::uid://fyd5l4mslhys::::res://character and weapons/classes/Pick/Rose_man/character_componets/rosette_ring_projectile.tscn<>uid://c87qcewo4nium::::res://character and weapons/classes/Pick/Rose_man/character_componets/Ros_ring_buff.tres<>res://character and weapons/character_base/weaponstats.gd
+Ros_ring_buff.tres::Resource/Resource::7156108583797725132::1709081521::0::1::::<><>::res://character and weapons/buffs/buff_script.gd
+Rush.tscn::PackedScene::4063350034706907005::1709336082::0::1::::<><>::res://character and weapons/character_base/base_gun_noded.gd<>uid://d4d15k0ux7cgi::::res://character and weapons/classes/Pick/Rose_man/character_componets/rush_stats.tres
+rush_buff.tres::Resource/Resource::5623144770341385423::1709089135::0::1::::<><>::res://character and weapons/buffs/buff_script.gd
+rush_stats.tres::Resource/Resource::9202564430267812876::1709089297::0::1::::<><>::uid://cmd5mw8ffqwu6::::res://character and weapons/classes/Pick/Rose_man/character_componets/rush_buff.tres<>res://character and weapons/character_base/weaponstats.gd
+Thorn.tscn::PackedScene::1317028261120102617::1709077683::0::1::::<><>::res://character and weapons/character_base/base_gun_noded.gd<>uid://b68g478q1frwu::::res://character and weapons/classes/Pick/Rose_man/character_componets/thorn_stats.tres
+thorn_flint_rose_reset_buff.tres::Resource/Resource::1123410979401268574::1709087568::0::1::::<><>::res://character and weapons/buffs/buff_script.gd
+thorn_stats.tres::Resource/Resource::4630817124823597132::1709088536::0::1::::<><>::uid://43asvjsglnhk::::res://character and weapons/classes/Roamer/Axel/character_components/tal_projectile_test.tscn<>uid://qagodnkk687c::::res://character and weapons/classes/Pick/Rose_man/character_componets/thorn_flint_rose_reset_buff.tres<>res://character and weapons/character_base/weaponstats.gd
+::res://character and weapons/classes/Roamer/::1709608074
+::res://character and weapons/classes/Roamer/Axel/::1709608074
+::res://character and weapons/classes/Roamer/Axel/character_components/::1709608074
+claw_dash_buff.tres::Resource/Resource::5441442977857336226::1708733601::0::1::::<><>::res://character and weapons/buffs/buff_script.gd
+claw_dash_stats.tres::Resource/Resource::2331380061125785879::1709073521::0::1::::<><>::uid://cjr41hdd7372m::::res://character and weapons/classes/Roamer/Axel/character_components/claw_dash_buff.tres<>res://character and weapons/character_base/weaponstats.gd
+tal_projectile_test.tscn::PackedScene::2093312304626797028::1709350042::0::1::::<><>::res://character and weapons/bulletBase/explosive_base_script.gd
+teleport_buff_tracker.tres::Resource/Resource::4360327696310092514::1706134743::0::1::::<><>::res://character and weapons/buffs/buff_script.gd
+teleport_placement.tres::Resource/Resource::354883912273842764::1709073521::0::1::::<><>::uid://b3ef7v5aymxxy::::res://character and weapons/classes/Roamer/Axel/character_components/teleport_buff_tracker.tres<>res://character and weapons/character_base/weaponstats.gd
+tranfuse_ammo_ability.tres::Resource/Resource::7349711006662896496::1709073521::0::1::::<><>::uid://cgxjkblvxu7kt::::res://character and weapons/classes/Roamer/Axel/character_components/transfuse_ammo_buff.tres<>res://character and weapons/character_base/weaponstats.gd
+transfuse_ammo_buff.tres::Resource/Resource::5242019498933620183::1708919704::0::1::::<><>::res://character and weapons/buffs/buff_script.gd
+trivolver.tres::Resource/Resource::7405786828388468717::1709073521::0::1::::<><>::uid://43asvjsglnhk::::res://character and weapons/classes/Roamer/Axel/character_components/tal_projectile_test.tscn<>res://character and weapons/character_base/weaponstats.gd
+::res://character and weapons/classes/Spectator(death_state)/::1709608074
+spectator.tscn::PackedScene::3930554779664668266::1708921438::0::1::::<><>::res://character and weapons/classes/Spectator(death_state)/spec_character.gd<>uid://cqa8xn3lvt0v6::::res://health_component.tscn<>res://addons/fpc/debug.gd<>uid://dqnx6cwdfplcf::::res://game_core/ui/menus/spectator_ui.tscn
+spec_character.gd::GDScript::-1::1708399841::0::1::::spectator<>CharacterBody3D<>::
+spec_lock.tres::Resource/Resource::4482738544386641965::1708144410::0::1::::<><>::uid://2nxhrdyifkag::::res://character and weapons/classes/Damage/shotgun/character_components/bouncy_grenade_projectile.tscn<>res://character and weapons/character_base/weaponstats.gd
+::res://character and weapons/classes/Support/::1707863843
+::res://character and weapons/classes/tool_slots/::1709608074
+ability1.tscn::PackedScene::6719355111488378341::1709073521::0::1::::<><>::res://character and weapons/character_base/base_gun_noded.gd<>uid://dcyiwwpctauwe::::res://character and weapons/classes/Roamer/Axel/character_components/tranfuse_ammo_ability.tres
+ability2.tscn::PackedScene::8975799249371672261::1709073521::0::1::::<><>::res://character and weapons/character_base/base_gun_noded.gd<>uid://fb55eowg6b21::::res://character and weapons/classes/Roamer/Axel/character_components/teleport_placement.tres
+ability_lockout_handler.gd::GDScript::-1::1708906186::0::1::::ALH<>Node3D<>::
+alt_fire.tscn::PackedScene::4395641398203602168::1709073521::0::1::::<><>::res://character and weapons/character_base/base_gun_noded.gd<>uid://8hlqvjgcnal0::::res://character and weapons/classes/Roamer/Axel/character_components/claw_dash_stats.tres
+base_gun.tscn::PackedScene::5123682519423822130::1709342867::0::1::::<><>::res://character and weapons/character_base/base_gun_noded.gd<>uid://ddrohyqssu51b::::res://character and weapons/classes/Roamer/Axel/character_components/trivolver.tres
+character_controls.gd::GDScript::-1::1709419817::0::1::::<>MultiplayerSynchronizer<>::
+player_base.tscn::PackedScene::3774239473539920713::1709606733::0::1::::<><>::res://addons/fpc/character.gd<>res://character and weapons/classes/tool_slots/character_controls.gd<>uid://dp0lk73knr3dt::::res://character and weapons/character_base/headbox.tscn<>res://character and weapons/classes/tool_slots/ability_lockout_handler.gd<>uid://cqa8xn3lvt0v6::::res://health_component.tscn<>uid://3mij3cjhkwsm::::res://addons/fpc/reticles/reticle_1.tscn<>res://addons/fpc/debug.gd<>uid://c0x2dbl3adufr::::res://hitbox_component.tscn
+::res://game_core/::1709608074
+game_core_proj.tscn::PackedScene::5506971551833168162::1709606732::0::1::::<><>::res://addons/untrue/game_root.gd<>uid://dvp0noigxnh7e::::res://game_core/loading_screen/temp_loading_screen.tscn
+::res://game_core/loading_screen/::1709608074
+screm.png::CompressedTexture2D::227931185579400348::1705294730::1708302580::1::::<><>::
+temp_loading_screen.tscn::PackedScene::8665735321918010872::1705711240::0::1::::<><>::uid://din81jwnr6f5::::res://game_core/loading_screen/screm.png
+::res://game_core/props/::1709608074
+::res://game_core/props/phys_props/::1709608074
+physPropBase.gd::GDScript::-1::1706225988::0::1::::PhysProp<>RigidBody3D<>::
+physPropBase.tscn::PackedScene::539738553935282659::1706225991::0::1::::<><>::res://game_core/props/phys_props/physPropBase.gd<>uid://c0x2dbl3adufr::::res://hitbox_component.tscn
+::res://game_core/props/static_props/::1706223718
+::res://game_core/ui/::1709608074
+ability_icon.tscn::PackedScene::6363782641634377021::1708720851::0::1::::<><>::uid://56o81k1ahbw6::::res://game_core/ui/skill placeholder.png<>uid://cusyqxilelam4::::res://game_core/ui/ability_icon_cooldown.png<>res://game_core/ui/ability_icon_cooldown_visualizer.gd<>uid://bgw2r1115ybk4::::res://game_core/ui/Inkfree.ttf<>uid://e2olwircyc05::::res://game_core/ui/ability_icon_duration.png<>uid://45j13uywllpy::::res://game_core/ui/bullet_decal_debug.png
+ability_icon_cooldown.png::CompressedTexture2D::6215264041149855661::1705537429::1708302580::1::::<><>::
+ability_icon_cooldown_visualizer.gd::GDScript::-1::1709078279::0::1::::<>TextureButton<>::
+ability_icon_duration.png::CompressedTexture2D::337364424191587704::1705535923::1708302580::1::::<><>::
+ammo numbers.gd::GDScript::-1::1708313028::0::1::::<>Label<>::
+ammo number_by_cross.gd::GDScript::-1::1708313028::0::1::::<>Label<>::
+bar.png::CompressedTexture2D::6206745180790164857::1705378484::1708302580::1::::<><>::
+bullet_decal_debug.png::CompressedTexture2D::2098002184371345402::1706144224::1708302580::1::::<><>::
+char_health.tscn::PackedScene::2810017796420673231::1705308284::0::1::::<><>::res://game_core/ui/char_health_read.gd
+char_health_read.gd::GDScript::-1::1705304576::0::1::::<>ProgressBar<>::
+empty hp segment.png::CompressedTexture2D::4676401348101712838::1705393656::1708302580::1::::<><>::
+health_num_display.gd::GDScript::-1::1708399841::0::1::::<>RichTextLabel<>::
+Inkfree.ttf::FontFile::2854641180406062677::1668060218::1708302579::1::::<><>::
+koth_ui.tscn::PackedScene::3126057077046590610::1707787962::0::1::::<><>::uid://bwe80bcv1ec2j::::res://game_core/ui/tf2build.ttf
+options background.png::CompressedTexture2D::5843341176792445664::1705457832::1708302581::1::::<><>::
+reload_icon.png::CompressedTexture2D::9194638182569368476::1706091134::1708302580::1::::<><>::
+skill placeholder ult.png::CompressedTexture2D::1507430583334678371::1705462916::1708302580::1::::<><>::
+skill placeholder.png::CompressedTexture2D::2170571370851162631::1705529608::1708302580::1::::<><>::
+TF2.ttf::FontFile::8508730394946620537::1201816470::1708302579::1::::<><>::
+tf2build.ttf::FontFile::3940881116956976391::1254525542::1708302579::1::::<><>::
+::res://game_core/ui/character select/::1709608074
+char portrate clicked placeholder.png::CompressedTexture2D::3753135124434225203::1707697456::1708302580::1::::<><>::
+char portrate disabled placeholder.png::CompressedTexture2D::5662168038307896623::1707697545::1708302580::1::::<><>::
+char portrate hover placeholder.png::CompressedTexture2D::6717821172772680929::1707691644::1708302580::1::::<><>::
+char portrate placeholder.png::CompressedTexture2D::2815948939389525232::1707690851::1708302580::1::::<><>::
+characterSelectionGroup.tscn::PackedScene::8864238101448270016::1709138433::0::1::::<><>::uid://fuenmr1ufh5k::::res://game_core/ui/character select/char_select_button_1.tscn<>uid://d3ephq06g285h::::res://game_core/ui/character select/Rozeten_still.png
+character_select_menu.gd::GDScript::-1::1707871740::0::1::::Character_Menu<>Control<>::
+char_select_button.gd::GDScript::-1::1708399841::0::1::::<>TextureButton<>::
+char_select_button_1.tscn::PackedScene::392498514313317130::1708403497::0::1::::<><>::uid://bgecjdmnrf52k::::res://game_core/ui/character select/char portrate placeholder.png<>uid://btqbt70yoda80::::res://game_core/ui/character select/char portrate clicked placeholder.png<>uid://c2yfseob6nmjh::::res://game_core/ui/character select/char portrate hover placeholder.png<>res://game_core/ui/character select/char_select_button.gd<>uid://dthxstyheam2t::::res://game_core/ui/TF2.ttf<>uid://cmw2cy4uli3ap::::res://game_core/ui/character select/char portrate disabled placeholder.png<>uid://vqhfqwnbv1ml::::res://game_core/ui/skill placeholder ult.png
+Rozeten_still.png::CompressedTexture2D::9133731319820609503::1709083447::1709083458::1::::<><>::
+::res://game_core/ui/menus/::1709608074
+gameEscMenu.gd::GDScript::-1::1708309093::0::1::::game_esc_menu<>Control<>::
+main_menu.gd::GDScript::-1::1709423843::0::1::::<>Node<>::
+main_menu.tscn::PackedScene::9112237052004070804::1709606732::0::1::::<><>::res://game_core/ui/menus/main_menu.gd<>res://game_core/ui/menus/slider number.gd
+Player Count.gd::GDScript::-1::1709420197::0::1::::<>LineEdit<>::
+player_ui.gd::GDScript::-1::1705792388::0::1::::game_esc_ui<>Control<>::
+player_ui.tscn::PackedScene::4808288085762902030::1709606733::0::1::::<><>::uid://bgw2r1115ybk4::::res://game_core/ui/Inkfree.ttf<>res://game_core/ui/ammo numbers.gd<>res://game_core/ui/ammo number_by_cross.gd<>uid://56o81k1ahbw6::::res://game_core/ui/skill placeholder.png<>res://game_core/ui/menus/weapon_name.gd<>uid://cwwwtnk62xlf6::::res://game_core/ui/ability_icon.tscn<>uid://b7vjv85utqdw5::::res://game_core/ui/empty hp segment.png<>uid://cuouglm02603v::::res://game_core/ui/bar.png<>res://character and weapons/character_base/healthBar.gd<>res://game_core/ui/health_num_display.gd<>uid://3mij3cjhkwsm::::res://addons/fpc/reticles/reticle_1.tscn<>res://game_core/ui/character select/character_select_menu.gd<>uid://dyj5yawj3xcqa::::res://game_core/ui/character select/characterSelectionGroup.tscn<>res://game_core/ui/menus/gameEscMenu.gd
+remap_button.gd::GDScript::-1::1705809790::0::1::::RemapButton<>Button<>::
+respawn time.gd::GDScript::-1::1708732817::0::1::::<>Label<>::
+slider number.gd::GDScript::-1::1709421540::0::1::::<>Label<>::
+spectator_ui.tscn::PackedScene::8310572449711266589::1708403497::0::1::::<><>::uid://bgw2r1115ybk4::::res://game_core/ui/Inkfree.ttf<>res://game_core/ui/menus/respawn time.gd<>res://game_core/ui/character select/character_select_menu.gd<>res://game_core/ui/menus/gameEscMenu.gd
+weapon_name.gd::GDScript::-1::1708313028::0::1::::<>Label<>::
+::res://game_core/ui/theme/::1709608074
+default_theme.tres::Theme::343237898129469938::1705793491::0::1::::<><>::uid://bgw2r1115ybk4::::res://game_core/ui/Inkfree.ttf<>uid://bwe80bcv1ec2j::::res://game_core/ui/tf2build.ttf
+::res://global_scripts/::1709608074
+change_character_handler.gd::GDScript::-1::1709418196::0::1::::<>Node3D<>::
+death_handler.gd::GDScript::-1::1708732432::0::1::::<>Node3D<>::
+global_signals.gd::GDScript::-1::1707867213::0::1::::<>Node<>::
+::res://_levels/::1709608075
+::res://_levels/common_objects/::1709608075
+sB_team_1.tscn::PackedScene::8008284808325119090::1705085449::0::1::::<><>::
+sB_team_2.tscn::PackedScene::3021188575405402116::1705085638::0::1::::<><>::
+sB_team_3.tscn::PackedScene::5168070385703115061::1705085655::0::1::::<><>::
+sB_team_4.tscn::PackedScene::7757234782344881892::1705085675::0::1::::<><>::
+spawnroom.gd::GDScript::-1::1708399865::0::1::::SpawnRoom<>Area3D<>::
+spawnroom.tscn::PackedScene::5167421725057828577::1707955689::0::1::::<><>::res://_levels/common_objects/spawnroom.gd
+::res://_levels/dev_worlds/::1709608075
+gamemode_Logic.gd::GDScript::-1::1709419817::0::1::::<>Node3D<>::
+test_world.tscn::PackedScene::1579421193435067776::1707969725::0::1::::<><>::uid://dmdjjstkp6blq::::res://_levels/common_objects/sB_team_1.tscn<>uid://bjbqsf2py8ydw::::res://_levels/common_objects/sB_team_2.tscn<>uid://cfvpmnabscrmj::::res://_levels/common_objects/sB_team_3.tscn<>uid://dirwr2gnlkvdk::::res://_levels/common_objects/sB_team_4.tscn<>uid://b5bwl7rxru377::::res://test_dummy.tscn<>uid://b8cr7avqjm3p2::::res://character and weapons/bulletBase/explosive_base.tscn<>uid://cc1m2a1obsyn4::::res://character and weapons/classes/Pick/basis/talus_demo.tscn
+test_world_2.tscn::PackedScene::4382421660278850816::1709351355::0::1::::<><>::res://addons/cyclops_level_builder/nodes/cyclops_block.gd<>res://addons/untrue/level_root.gd<>uid://b1bwoea0a464q::::res://_levels/gamemodes/dev_mode.tres<>res://addons/cyclops_level_builder/resources/convex_block_data.gd<>res://addons/untrue/player_spawn_3d.gd<>res://_levels/dev_worlds/gamemode_Logic.gd<>uid://b8cr7avqjm3p2::::res://character and weapons/bulletBase/explosive_base.tscn<>uid://cfvexfb2uhpan::::res://_levels/common_objects/spawnroom.tscn<>uid://b5bwl7rxru377::::res://test_dummy.tscn
+test_world_2_no_untrue.tscn::PackedScene::8417327584868795331::1709606733::0::1::::<><>::res://_levels/dev_worlds/world_sync_logic.gd<>res://addons/cyclops_level_builder/nodes/cyclops_block.gd<>res://addons/cyclops_level_builder/resources/convex_block_data.gd<>uid://b8cr7avqjm3p2::::res://character and weapons/bulletBase/explosive_base.tscn<>uid://b5bwl7rxru377::::res://test_dummy.tscn<>uid://cfvexfb2uhpan::::res://_levels/common_objects/spawnroom.tscn<>res://_levels/dev_worlds/gamemode_Logic.gd
+world_sync_logic.gd::GDScript::-1::1709418138::0::1::::<>Node3D<>::
+::res://_levels/gamemodes/::1709608075
+dev_mode.tres::Resource/Resource::4214755982221996398::1709351823::0::1::::<><>::res://addons/untrue/game_mode.gd<>uid://bksjx6b6vebpa::::res://game_core/ui/koth_ui.tscn<>uid://bnwp1imc5vpcd::::res://character and weapons/classes/Damage/shotgun/shotty_demo.tscn

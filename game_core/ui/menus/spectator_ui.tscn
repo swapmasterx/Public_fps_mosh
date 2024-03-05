@@ -1,0 +1,216 @@
+[gd_scene load_steps=5 format=3 uid="uid://dqnx6cwdfplcf"]
+
+[ext_resource type="FontFile" uid="uid://bgw2r1115ybk4" path="res://game_core/ui/Inkfree.ttf" id="1_qhqle"]
+[ext_resource type="Script" path="res://game_core/ui/menus/respawn time.gd" id="2_6fw8a"]
+[ext_resource type="Script" path="res://game_core/ui/character select/character_select_menu.gd" id="3_8tsx7"]
+[ext_resource type="Script" path="res://game_core/ui/menus/gameEscMenu.gd" id="16_eytfg"]
+
+[node name="spectator_ui" type="Control"]
+show_behind_parent = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="respawn_info" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="respawn_info"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("1_qhqle")
+theme_override_font_sizes/font_size = 50
+text = " Respawning in: 00"
+vertical_alignment = 2
+script = ExtResource("2_6fw8a")
+
+[node name="Char_Menu" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_8tsx7")
+
+[node name="ColorRect" type="ColorRect" parent="Char_Menu"]
+layout_mode = 2
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.443137, 0.121569, 0.54902, 0.2)
+
+[node name="MarginContainer2" type="MarginContainer" parent="Char_Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 748.0
+offset_top = 34.0
+offset_right = -28.0
+offset_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="char_preview" type="ColorRect" parent="Char_Menu/MarginContainer2"]
+layout_mode = 2
+color = Color(0.2, 0.2, 0.2, 0.658824)
+
+[node name="char_prev_placeholder" type="TextureRect" parent="Char_Menu/MarginContainer2"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Char_Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="GameEscMenu" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("16_eytfg")
+action_items = Array[String](["move_left", "move_right", "move_forward", "move_back", "jump", "crouchCtrl", "shoot", "alt_fire", "ability1", "ability2", "ability3", "reload", "Change Character", "Character Debug", "spectator decend"])
+
+[node name="prime_menu" type="MarginContainer" parent="GameEscMenu"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="GameEscMenu"]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 0.243137)
+
+[node name="MarginContainer" type="MarginContainer" parent="GameEscMenu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 900
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameEscMenu/MarginContainer"]
+layout_mode = 2
+
+[node name="return_to_game" type="Button" parent="GameEscMenu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Resume Game"
+
+[node name="options" type="Button" parent="GameEscMenu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Options"
+
+[node name="Main Menu" type="Button" parent="GameEscMenu/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Main Menu"
+
+[node name="Quit Game" type="Button" parent="GameEscMenu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit Game
+"
+
+[node name="menu_0" type="ColorRect" parent="GameEscMenu"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1280.0
+offset_right = 1280.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.243137)
+
+[node name="MarginContainer2" type="MarginContainer" parent="GameEscMenu/menu_0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 600
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameEscMenu/menu_0/MarginContainer2"]
+layout_mode = 2
+
+[node name="SettingsGridContainer" type="GridContainer" parent="GameEscMenu/menu_0/MarginContainer2/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 2
+
+[node name="Label" type="Label" parent="GameEscMenu/menu_0/MarginContainer2/VBoxContainer/SettingsGridContainer"]
+layout_mode = 2
+text = "Music"
+
+[node name="mus_slider" type="HSlider" parent="GameEscMenu/menu_0/MarginContainer2/VBoxContainer/SettingsGridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+step = 0.05
+value = 50.0
+
+[node name="Label2" type="Label" parent="GameEscMenu/menu_0/MarginContainer2/VBoxContainer/SettingsGridContainer"]
+layout_mode = 2
+text = "Sound Effects"
+
+[node name="sound_slider" type="HSlider" parent="GameEscMenu/menu_0/MarginContainer2/VBoxContainer/SettingsGridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+step = 0.05
+value = 50.0
+
+[node name="back" type="Button" parent="GameEscMenu/menu_0/MarginContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "Back"
+
+[connection signal="pressed" from="GameEscMenu/MarginContainer/VBoxContainer/return_to_game" to="GameEscMenu" method="_on_return_to_game_pressed"]
+[connection signal="pressed" from="GameEscMenu/MarginContainer/VBoxContainer/options" to="GameEscMenu" method="_on_options_pressed"]
+[connection signal="pressed" from="GameEscMenu/MarginContainer/VBoxContainer/Main Menu" to="GameEscMenu" method="_on_main_menu_pressed"]
+[connection signal="pressed" from="GameEscMenu/MarginContainer/VBoxContainer/Quit Game" to="GameEscMenu" method="_on_quit_game_pressed"]
+[connection signal="value_changed" from="GameEscMenu/menu_0/MarginContainer2/VBoxContainer/SettingsGridContainer/mus_slider" to="GameEscMenu" method="_on_mus_slider_value_changed"]
+[connection signal="value_changed" from="GameEscMenu/menu_0/MarginContainer2/VBoxContainer/SettingsGridContainer/sound_slider" to="GameEscMenu" method="_on_sound_slider_value_changed"]
+[connection signal="pressed" from="GameEscMenu/menu_0/MarginContainer2/VBoxContainer/back" to="GameEscMenu" method="_on_back_pressed"]

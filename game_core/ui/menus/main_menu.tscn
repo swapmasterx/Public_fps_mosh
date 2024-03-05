@@ -1,0 +1,140 @@
+[gd_scene load_steps=3 format=3 uid="uid://d23bhifcyi8cm"]
+
+[ext_resource type="Script" path="res://game_core/ui/menus/main_menu.gd" id="1_pjheh"]
+[ext_resource type="Script" path="res://game_core/ui/menus/slider number.gd" id="2_p6lbg"]
+
+[node name="Multiplayer" type="Node"]
+script = ExtResource("1_pjheh")
+
+[node name="Level" type="Node" parent="."]
+unique_name_in_owner = true
+
+[node name="LevelSpawner" type="MultiplayerSpawner" parent="Level"]
+_spawnable_scenes = PackedStringArray("res://_levels/dev_worlds/test_world_2_no_untrue.tscn")
+spawn_path = NodePath("..")
+spawn_limit = 1
+
+[node name="Main Menu" type="Control" parent="."]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Main Menu"]
+top_level = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Main Menu/MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Main Menu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "IncredibleDonks Game
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Buttons_vBox" type="VBoxContainer" parent="Main Menu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="Host" type="Button" parent="Main Menu/MarginContainer/VBoxContainer/Buttons_vBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_neighbor_top = NodePath("../ExitGame")
+focus_neighbor_bottom = NodePath("../Options")
+focus_next = NodePath("../Options")
+focus_previous = NodePath("../ExitGame")
+theme_override_font_sizes/font_size = 20
+text = "Host a Game"
+
+[node name="GridContainer" type="GridContainer" parent="Main Menu/MarginContainer/VBoxContainer/Buttons_vBox"]
+layout_mode = 2
+columns = 3
+
+[node name="player_limit" type="Label" parent="Main Menu/MarginContainer/VBoxContainer/Buttons_vBox/GridContainer"]
+layout_mode = 2
+text = "Player Limit"
+
+[node name="player count" type="HSlider" parent="Main Menu/MarginContainer/VBoxContainer/Buttons_vBox/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 2.0
+max_value = 18.0
+step = 2.0
+value = 2.0
+tick_count = 9
+ticks_on_borders = true
+
+[node name="slider number" type="Label" parent="Main Menu/MarginContainer/VBoxContainer/Buttons_vBox/GridContainer"]
+layout_mode = 2
+text = "2"
+script = ExtResource("2_p6lbg")
+
+[node name="Join" type="Button" parent="Main Menu/MarginContainer/VBoxContainer/Buttons_vBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_neighbor_top = NodePath("../ExitGame")
+focus_neighbor_bottom = NodePath("../Options")
+focus_next = NodePath("../Options")
+focus_previous = NodePath("../ExitGame")
+theme_override_font_sizes/font_size = 20
+text = "Join a Game"
+
+[node name="LineEdit" type="LineEdit" parent="Main Menu/MarginContainer/VBoxContainer/Buttons_vBox"]
+layout_mode = 2
+placeholder_text = "insert ip"
+
+[node name="Options" type="Button" parent="Main Menu/MarginContainer/VBoxContainer/Buttons_vBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_neighbor_top = NodePath("../Host")
+focus_neighbor_bottom = NodePath("../ExitGame")
+focus_next = NodePath("../ExitGame")
+focus_previous = NodePath("../Host")
+theme_override_font_sizes/font_size = 20
+text = "Options"
+
+[node name="ExitGame" type="Button" parent="Main Menu/MarginContainer/VBoxContainer/Buttons_vBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_neighbor_top = NodePath("../Options")
+focus_neighbor_bottom = NodePath("../Host")
+focus_next = NodePath("../Host")
+focus_previous = NodePath("../Options")
+theme_override_font_sizes/font_size = 20
+text = "Quit
+"
+
+[node name="ColorRect" type="ColorRect" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.215686, 0.45098, 0.690196, 1)
+
+[connection signal="pressed" from="Main Menu/MarginContainer/VBoxContainer/Buttons_vBox/Host" to="." method="_on_host_pressed"]
+[connection signal="pressed" from="Main Menu/MarginContainer/VBoxContainer/Buttons_vBox/Join" to="." method="_on_join_pressed"]
+[connection signal="pressed" from="Main Menu/MarginContainer/VBoxContainer/Buttons_vBox/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Main Menu/MarginContainer/VBoxContainer/Buttons_vBox/ExitGame" to="." method="_on_exit_game_pressed"]

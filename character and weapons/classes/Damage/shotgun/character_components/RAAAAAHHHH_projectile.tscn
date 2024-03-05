@@ -1,0 +1,74 @@
+[gd_scene load_steps=6 format=3 uid="uid://c12gqqb0b4ea6"]
+
+[ext_resource type="Script" path="res://character and weapons/bulletBase/explosive_base_script.gd" id="1_ort7n"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_q35d3"]
+radius = 0.15
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_brctt"]
+radius = 0.155
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_dv3pt"]
+radius = 8.0
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_oxw20"]
+properties/0/path = NodePath(".:linear_velocity")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:angular_velocity")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+properties/2/path = NodePath(".:position")
+properties/2/spawn = true
+properties/2/replication_mode = 1
+properties/3/path = NodePath(".:rotation")
+properties/3/spawn = true
+properties/3/replication_mode = 1
+
+[node name="RigidBody3D" type="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, -7.45058e-08, 0, 7.45058e-08, 1, 0, 0, 0)
+collision_layer = 0
+collision_mask = 926
+input_ray_pickable = false
+mass = 10.0
+gravity_scale = 0.0
+max_contacts_reported = 1
+contact_monitor = true
+script = ExtResource("1_ort7n")
+proj_headshot_multiplier = 0.0
+fuse_on_impact = false
+insta_det = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_q35d3")
+
+[node name="contact explosion" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 960
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="contact explosion"]
+shape = SubResource("SphereShape3D_brctt")
+
+[node name="explosionRadius" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 960
+input_ray_pickable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="explosionRadius"]
+shape = SubResource("SphereShape3D_dv3pt")
+
+[node name="fuse_timer" type="Timer" parent="."]
+wait_time = 0.05
+one_shot = true
+
+[node name="timeout_timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_oxw20")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="area_entered" from="contact explosion" to="." method="_on_contact_explosion_area_entered"]
+[connection signal="timeout" from="fuse_timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="timeout_timer" to="." method="_on_timer_timeout"]

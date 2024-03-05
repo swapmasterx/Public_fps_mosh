@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="WeaponStats" load_steps=3 format=3 uid="uid://cg5o867v1bgjd"]
+
+[ext_resource type="PackedScene" uid="uid://2nxhrdyifkag" path="res://character and weapons/classes/Damage/shotgun/character_components/bouncy_grenade_projectile.tscn" id="1_ll8f7"]
+[ext_resource type="Script" path="res://character and weapons/character_base/weaponstats.gd" id="2_usw6f"]
+
+[resource]
+script = ExtResource("2_usw6f")
+name = "grenade"
+input = "ability1"
+weapon_slot = 3
+is_primary = false
+can_manually_reload = false
+fire_animation_call = "ability1"
+reload_animation_call = "null"
+breach_reload_animation_call = ""
+Type2 = 3
+breach_load = false
+breach_load_count = 1
+spread_random = 0
+projectileToLoad = ExtResource("1_ll8f7")
+projectileSpeed = 20
+rangeValue = 2000
+recoil_enabled = false
+damage = 100.0
+blast_damage = 900.0
+headshot_multiplier = 0.0
+max_ammo = 1
+ammo = 1
+ammo_per_shot = 1
+projectiles_per_shot = 1
+firing_type = 1
+reload_speed = 14.95
+firing_speed = 0.2
+min_firing_speed = 0.0
+max_firing_speed = 0.0
+RPM_speed_ramp = 0.0
+ability_duration = 0.05
+Passive_lockout_check = false
+Primary_lockout_check = true
+AltFire_lockout_check = true
+Ability1_lockout_check = false
+Ability2_lockout_check = true
+burst_fire = false
+burstfire_delay = 0.0
+burstfire_shot_count = 0
+vertical_angle = 5.0
+horizontal_angle = 1.0
+min_recoil_amount = 5.0
+max_recoil_amount = 5.0
+recoil_recovery_speed = 5.0

@@ -1,0 +1,388 @@
+[gd_scene load_steps=15 format=3 uid="uid://carf2joscmu5c"]
+
+[ext_resource type="FontFile" uid="uid://bgw2r1115ybk4" path="res://game_core/ui/Inkfree.ttf" id="1_hpkwv"]
+[ext_resource type="Script" path="res://game_core/ui/ammo numbers.gd" id="2_k6psp"]
+[ext_resource type="Script" path="res://game_core/ui/ammo number_by_cross.gd" id="3_17apx"]
+[ext_resource type="Texture2D" uid="uid://56o81k1ahbw6" path="res://game_core/ui/skill placeholder.png" id="5_65k7a"]
+[ext_resource type="Script" path="res://game_core/ui/menus/weapon_name.gd" id="5_725qn"]
+[ext_resource type="PackedScene" uid="uid://cwwwtnk62xlf6" path="res://game_core/ui/ability_icon.tscn" id="6_q7sxa"]
+[ext_resource type="Texture2D" uid="uid://b7vjv85utqdw5" path="res://game_core/ui/empty hp segment.png" id="7_hguw8"]
+[ext_resource type="Texture2D" uid="uid://cuouglm02603v" path="res://game_core/ui/bar.png" id="8_36m4h"]
+[ext_resource type="Script" path="res://character and weapons/character_base/healthBar.gd" id="9_slb8e"]
+[ext_resource type="Script" path="res://game_core/ui/health_num_display.gd" id="10_37d8e"]
+[ext_resource type="PackedScene" uid="uid://3mij3cjhkwsm" path="res://addons/fpc/reticles/reticle_1.tscn" id="11_tl7fa"]
+[ext_resource type="Script" path="res://game_core/ui/character select/character_select_menu.gd" id="12_d1chv"]
+[ext_resource type="PackedScene" uid="uid://dyj5yawj3xcqa" path="res://game_core/ui/character select/characterSelectionGroup.tscn" id="13_lwhhc"]
+[ext_resource type="Script" path="res://game_core/ui/menus/gameEscMenu.gd" id="16_6v56w"]
+
+[node name="player_UI" type="Control"]
+show_behind_parent = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ammo number_by_crosss2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 404.0
+offset_top = 230.0
+offset_right = 404.0
+offset_bottom = 230.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.44, 0.44)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("1_hpkwv")
+theme_override_font_sizes/font_size = 50
+text = "00/00"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_17apx")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -267.0
+offset_top = -167.0
+offset_right = 125.0
+offset_bottom = 93.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.55, 0.55)
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("5_65k7a")
+
+[node name="ammo numbers" type="Label" parent="VBoxContainer/TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -488.727
+offset_top = -211.273
+offset_right = 663.273
+offset_bottom = 436.727
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.64, 0.64)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("1_hpkwv")
+theme_override_font_sizes/font_size = 100
+text = "00"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_k6psp")
+
+[node name="weapon_name" type="Label" parent="VBoxContainer/TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -221.455
+offset_top = -153.091
+offset_right = 930.545
+offset_bottom = 494.909
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.47, 0.47)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("1_hpkwv")
+theme_override_font_sizes/font_size = 100
+text = "#gunname"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("5_725qn")
+
+[node name="reload_visualizer" type="Timer" parent="VBoxContainer/TextureRect"]
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
+show_behind_parent = true
+layout_direction = 2
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+columns = 4
+
+[node name="ability_button_0" parent="VBoxContainer/GridContainer" instance=ExtResource("6_q7sxa")]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+
+[node name="ability_button_1" parent="VBoxContainer/GridContainer" instance=ExtResource("6_q7sxa")]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+
+[node name="ability_button_2" parent="VBoxContainer/GridContainer" instance=ExtResource("6_q7sxa")]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+
+[node name="health ui" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+
+[node name="health_segments" type="TextureRect" parent="health ui"]
+texture_repeat = 2
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 45.0
+offset_top = -86.0
+offset_right = 1594.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.215, 0.545)
+texture = ExtResource("7_hguw8")
+stretch_mode = 1
+
+[node name="ProgressBar2" type="TextureProgressBar" parent="health ui"]
+z_index = -1
+texture_repeat = 2
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 43.0
+offset_top = -86.0
+offset_right = 431.0
+grow_vertical = 0
+scale = Vector2(0.864, 0.545)
+step = 0.05
+value = 100.0
+texture_progress = ExtResource("8_36m4h")
+tint_progress = Color(0.176471, 0.968627, 0.968627, 1)
+script = ExtResource("9_slb8e")
+
+[node name="health numbers" type="RichTextLabel" parent="health ui"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 196.0
+offset_top = -119.0
+offset_right = 583.0
+offset_bottom = -19.0
+grow_vertical = 0
+scale = Vector2(0.545, 0.545)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/normal_font = ExtResource("1_hpkwv")
+theme_override_fonts/bold_font = ExtResource("1_hpkwv")
+theme_override_font_sizes/normal_font_size = 50
+theme_override_font_sizes/bold_font_size = 50
+bbcode_enabled = true
+text = "[center]0000/0000[/center]"
+scroll_active = false
+autowrap_mode = 0
+meta_underlined = false
+hint_underlined = false
+script = ExtResource("10_37d8e")
+
+[node name="Reticle_1" parent="." node_paths=PackedStringArray("reticle_lines") instance=ExtResource("11_tl7fa")]
+layout_mode = 1
+reticle_lines = [null, null, null, null]
+
+[node name="Char_Menu" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("12_d1chv")
+
+[node name="ColorRect" type="ColorRect" parent="Char_Menu"]
+layout_mode = 2
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.443137, 0.121569, 0.54902, 0.2)
+
+[node name="MarginContainer2" type="MarginContainer" parent="Char_Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 748.0
+offset_top = 11.0
+offset_right = -32.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="char_preview" type="ColorRect" parent="Char_Menu/MarginContainer2"]
+layout_mode = 2
+color = Color(0.2, 0.2, 0.2, 0.658824)
+
+[node name="char_prev_placeholder" type="TextureRect" parent="Char_Menu/MarginContainer2"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Char_Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="CharacterSelectionGroup" parent="Char_Menu/MarginContainer" instance=ExtResource("13_lwhhc")]
+layout_mode = 2
+
+[node name="GameEscMenu" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("16_6v56w")
+action_items = Array[String](["move_left", "move_right", "move_forward", "move_back", "jump", "crouchCtrl", "shoot", "alt_fire", "ability1", "ability2", "ability3", "reload", "Change Character", "Character Debug", "spectator decend"])
+
+[node name="prime_menu" type="MarginContainer" parent="GameEscMenu"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="GameEscMenu"]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 0.243137)
+
+[node name="MarginContainer" type="MarginContainer" parent="GameEscMenu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 900
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameEscMenu/MarginContainer"]
+layout_mode = 2
+
+[node name="return_to_game" type="Button" parent="GameEscMenu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Resume Game"
+
+[node name="options" type="Button" parent="GameEscMenu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Options"
+
+[node name="Main Menu" type="Button" parent="GameEscMenu/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Main Menu"
+
+[node name="Quit Game" type="Button" parent="GameEscMenu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit Game
+"
+
+[node name="menu_0" type="ColorRect" parent="GameEscMenu"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1280.0
+offset_right = 1280.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.243137)
+
+[node name="MarginContainer2" type="MarginContainer" parent="GameEscMenu/menu_0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 600
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameEscMenu/menu_0/MarginContainer2"]
+layout_mode = 2
+
+[node name="SettingsGridContainer" type="GridContainer" parent="GameEscMenu/menu_0/MarginContainer2/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 2
+
+[node name="Label" type="Label" parent="GameEscMenu/menu_0/MarginContainer2/VBoxContainer/SettingsGridContainer"]
+layout_mode = 2
+text = "Music"
+
+[node name="mus_slider" type="HSlider" parent="GameEscMenu/menu_0/MarginContainer2/VBoxContainer/SettingsGridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+step = 0.05
+value = 50.0
+
+[node name="Label2" type="Label" parent="GameEscMenu/menu_0/MarginContainer2/VBoxContainer/SettingsGridContainer"]
+layout_mode = 2
+text = "Sound Effects"
+
+[node name="sound_slider" type="HSlider" parent="GameEscMenu/menu_0/MarginContainer2/VBoxContainer/SettingsGridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+step = 0.05
+value = 50.0
+
+[node name="back" type="Button" parent="GameEscMenu/menu_0/MarginContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "Back"
+
+[connection signal="pressed" from="GameEscMenu/MarginContainer/VBoxContainer/return_to_game" to="GameEscMenu" method="_on_return_to_game_pressed"]
+[connection signal="pressed" from="GameEscMenu/MarginContainer/VBoxContainer/options" to="GameEscMenu" method="_on_options_pressed"]
+[connection signal="pressed" from="GameEscMenu/MarginContainer/VBoxContainer/Main Menu" to="GameEscMenu" method="_on_main_menu_pressed"]
+[connection signal="pressed" from="GameEscMenu/MarginContainer/VBoxContainer/Quit Game" to="GameEscMenu" method="_on_quit_game_pressed"]
+[connection signal="value_changed" from="GameEscMenu/menu_0/MarginContainer2/VBoxContainer/SettingsGridContainer/mus_slider" to="GameEscMenu" method="_on_mus_slider_value_changed"]
+[connection signal="value_changed" from="GameEscMenu/menu_0/MarginContainer2/VBoxContainer/SettingsGridContainer/sound_slider" to="GameEscMenu" method="_on_sound_slider_value_changed"]
+[connection signal="pressed" from="GameEscMenu/menu_0/MarginContainer2/VBoxContainer/back" to="GameEscMenu" method="_on_back_pressed"]

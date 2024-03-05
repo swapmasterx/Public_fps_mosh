@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="WeaponStats" load_steps=3 format=3 uid="uid://b44qbwrter5nt"]
+
+[ext_resource type="PackedScene" uid="uid://2nxhrdyifkag" path="res://character and weapons/classes/Damage/shotgun/character_components/bouncy_grenade_projectile.tscn" id="1_mpdfi"]
+[ext_resource type="Script" path="res://character and weapons/character_base/weaponstats.gd" id="2_mvbir"]
+
+[resource]
+script = ExtResource("2_mvbir")
+name = "specLock"
+input = "specLock"
+is_weapon_slot = 0
+is_primary = false
+can_manually_reload = false
+fire_animation_call = ""
+reload_animation_call = ""
+Type = 0
+breach_load = false
+breach_load_count = 1
+projectileToLoad = ExtResource("1_mpdfi")
+projectileSpeed = 90
+rangeValue = 2000
+recoil_enabled = false
+damage = 0.0
+blast_damage = 0.0
+headshot_multiplier = 0.0
+max_ammo = 1
+ammo = 1
+ammo_per_shot = 1
+firing_type = 1
+reload_speed = 1.0
+firing_speed = 0.5
+min_firing_speed = 0.0
+max_firing_speed = 0.0
+RPM_speed_ramp = 0.0
+ability_duration = 0.0
+burst_fire = false
+burstfire_delay = 0.0
+burstfire_shot_count = 0
+vertical_angle = 0.0
+horizontal_angle = 0.0
+min_recoil_amount = 0.0
+max_recoil_amount = 0.0
+recoil_recovery_speed = 0.0

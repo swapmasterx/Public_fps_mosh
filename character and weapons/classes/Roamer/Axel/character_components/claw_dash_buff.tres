@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Buff" load_steps=2 format=3 uid="uid://cjr41hdd7372m"]
+
+[ext_resource type="Script" path="res://character and weapons/buffs/buff_script.gd" id="1_hme2e"]
+
+[resource]
+script = ExtResource("1_hme2e")
+name = "blitz_upper_buff"
+duration = 0.5
+headshot_multiplier_bonus = 0.0
+damage_multiplier = 0.0
+attack_speed_multiplier = 0.0
+infinite_ammo = false
+damage_taken_mult = 0.0
+dot_duration = 0.0
+dot_damage = 0.0
+dot_damage_rate = 0.0
+move_speed_mult = 0.0
+jump_hight_mult = 0.0
+grounded_dash_active = true
+directional_dash_active = false
+leap_active = false
+omni_dash_active = false
+dash_time = 0.3
+dash_speed = 35.0

@@ -1,0 +1,75 @@
+[gd_scene load_steps=7 format=3 uid="uid://bv88wsm8djwwo"]
+
+[ext_resource type="Script" path="res://character and weapons/classes/Spectator(death_state)/spec_character.gd" id="1_n6ndv"]
+[ext_resource type="PackedScene" uid="uid://cqa8xn3lvt0v6" path="res://health_component.tscn" id="8_do52y"]
+[ext_resource type="Script" path="res://addons/fpc/debug.gd" id="9_bxlrg"]
+[ext_resource type="PackedScene" uid="uid://dqnx6cwdfplcf" path="res://game_core/ui/menus/spectator_ui.tscn" id="11_l4pq5"]
+
+[sub_resource type="Theme" id="Theme_wdf0f"]
+MarginContainer/constants/margin_bottom = 10
+MarginContainer/constants/margin_left = 10
+MarginContainer/constants/margin_right = 10
+MarginContainer/constants/margin_top = 10
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gg21a"]
+size = Vector3(1, 2, 1)
+
+[node name="char_main" type="CharacterBody3D" node_paths=PackedStringArray("HEAD", "CAMERA", "CAMERA_ANIMATION", "COLLISION_MESH")]
+collision_layer = 0
+collision_mask = 16
+script = ExtResource("1_n6ndv")
+base_speed = 10.0
+crouch_speed = 10.0
+HEAD = NodePath("Head")
+CAMERA = NodePath("Head/Camera")
+CAMERA_ANIMATION = NodePath("Character Animation")
+COLLISION_MESH = NodePath("CollisionHull")
+in_air_momentum = false
+motion_smoothing = true
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="Camera" type="Camera3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0799021, -0.0542969)
+fov = 74.957
+
+[node name="HealthComponent" parent="." instance=ExtResource("8_do52y")]
+
+[node name="UserInterface" type="Control" parent="HealthComponent"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 1
+
+[node name="DebugPanel" type="PanelContainer" parent="HealthComponent/UserInterface"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 453.0
+offset_bottom = 50.0
+theme = SubResource("Theme_wdf0f")
+script = ExtResource("9_bxlrg")
+
+[node name="MarginContainer" type="MarginContainer" parent="HealthComponent/UserInterface/DebugPanel"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HealthComponent/UserInterface/DebugPanel/MarginContainer"]
+layout_mode = 2
+
+[node name="spectator_ui" parent="HealthComponent/UserInterface" instance=ExtResource("11_l4pq5")]
+layout_mode = 1
+
+[node name="CollisionHull" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_gg21a")
+
+[node name="Character Animation" type="AnimationPlayer" parent="."]
+
+[editable path="HealthComponent/UserInterface/spectator_ui"]

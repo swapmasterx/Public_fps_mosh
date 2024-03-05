@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="WeaponStats" load_steps=3 format=3 uid="uid://dyxq7f3nxebmd"]
+
+[ext_resource type="PackedScene" uid="uid://43asvjsglnhk" path="res://character and weapons/classes/Roamer/Axel/character_components/tal_projectile_test.tscn" id="1_3jtlf"]
+[ext_resource type="Script" path="res://character and weapons/character_base/weaponstats.gd" id="2_8tgk0"]
+
+[resource]
+script = ExtResource("2_8tgk0")
+name = "Flint Rose"
+weapon_slot = 2
+is_primary = true
+can_manually_reload = true
+fire_animation_call = "gun_fire"
+reload_animation_call = "reload"
+breach_reload_animation_call = ""
+Type2 = 2
+breach_load = false
+breach_load_count = 1
+spread_random = 0
+projectileToLoad = ExtResource("1_3jtlf")
+projectileSpeed = 60
+rangeValue = 2000
+recoil_enabled = true
+damage = 450.0
+damage_maxFalloff = 200.0
+blast_damage = 0.0
+headshot_multiplier = 2.0
+max_ammo = 1
+ammo = 1
+ammo_per_shot = 1
+projectiles_per_shot = 1
+firing_type = 0
+reload_speed = 1.1
+firing_speed = 0.45
+min_firing_speed = 0.0
+max_firing_speed = 0.0
+RPM_speed_ramp = 0.0
+ability_duration = 0.0
+damage_falloff_start = 12
+damage_falloff_end = 40
+uses_melee_box = false
+melee_box_duration = 0.4
+Passive_lockout_check = true
+Primary_lockout_check = false
+AltFire_lockout_check = false
+Ability1_lockout_check = true
+Ability2_lockout_check = true
+burstfire_delay = 0.0
+burstfire_lockout = 0.0
+burstfire_shot_count = 0
+vertical_angle = 5.0
+horizontal_angle = 0.05
+min_recoil_amount = 1.0
+max_recoil_amount = 2.0
+recoil_recovery_speed = 5.0

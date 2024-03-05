@@ -1,0 +1,12 @@
+res://character and weapons/classes/Damage/shotgun/shotty_demo.tscn
+res://addons/cyclops_level_builder/shaders/outline_shader.tres
+res://addons/cyclops_level_builder/docks/material_palette/thumbnail_selected_theme.tres
+res://addons/cyclops_level_builder/docks/material_palette/thumbnail_normal_theme.tres
+res://game_core/ui/menus/main_menu.tscn
+res://game_core/game_core_proj.tscn
+res://character and weapons/classes/tool_slots/player_base.tscn
+res://test_dummy.tscn
+res://_levels/dev_worlds/test_world_2_no_untrue.tscn
+res://game_core/ui/menus/player_ui.tscn
+res://character and weapons/classes/Damage/shotgun/character_components/bomb_projectile.tscn
+res://character and weapons/classes/Damage/shotgun/character_components/RAAAAAHHHH_projectile.tscn

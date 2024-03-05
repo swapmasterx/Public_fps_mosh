@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="WeaponStats" load_steps=3 format=3 uid="uid://d4d15k0ux7cgi"]
+
+[ext_resource type="Resource" uid="uid://cmd5mw8ffqwu6" path="res://character and weapons/classes/Pick/Rose_man/character_componets/rush_buff.tres" id="1_dypt0"]
+[ext_resource type="Script" path="res://character and weapons/character_base/weaponstats.gd" id="2_gfiwl"]
+
+[resource]
+script = ExtResource("2_gfiwl")
+name = "Rush"
+weapon_slot = 3
+is_primary = false
+can_manually_reload = false
+fire_animation_call = "Transfuse_start"
+reload_animation_call = ""
+breach_reload_animation_call = ""
+Type2 = 1
+breach_load = false
+breach_load_count = 1
+buff_handler_1 = ExtResource("1_dypt0")
+spread_random = 0
+projectileSpeed = 80
+rangeValue = 2000
+recoil_enabled = false
+damage = 0.0
+damage_maxFalloff = 0.0
+blast_damage = 0.0
+headshot_multiplier = 0.0
+max_ammo = 1
+ammo = 1
+ammo_per_shot = 1
+projectiles_per_shot = 1
+firing_type = 4
+reload_speed = 8.0
+firing_speed = 0.05
+min_firing_speed = 0.0
+max_firing_speed = 0.0
+RPM_speed_ramp = 0.0
+ability_duration = 4.0
+damage_falloff_start = 0
+damage_falloff_end = 0
+uses_melee_box = false
+melee_box_duration = 0.4
+Passive_lockout_check = false
+Primary_lockout_check = false
+AltFire_lockout_check = false
+Ability1_lockout_check = false
+Ability2_lockout_check = false
+burstfire_delay = 0.0
+burstfire_lockout = 0.0
+burstfire_shot_count = 0
+vertical_angle = 1.0
+horizontal_angle = 1.0
+min_recoil_amount = 1.0
+max_recoil_amount = 1.0
+recoil_recovery_speed = 1.0

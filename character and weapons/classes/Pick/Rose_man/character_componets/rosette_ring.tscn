@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dltvky1vdn5em"]
+
+[ext_resource type="Script" path="res://character and weapons/character_base/base_gun_noded.gd" id="1_ugak5"]
+[ext_resource type="Resource" uid="uid://bhc15tqshqa8c" path="res://character and weapons/classes/Pick/Rose_man/character_componets/rosette_ring_stats.tres" id="2_u8d7j"]
+
+[sub_resource type="Curve2D" id="Curve2D_3172f"]
+bake_interval = 1.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0)
+}
+point_count = 1
+
+[node name="rosette_ring" type="Node3D"]
+script = ExtResource("1_ugak5")
+is_buffable = false
+stats = ExtResource("2_u8d7j")
+
+[node name="muzzle" type="Marker3D" parent="."]
+unique_name_in_owner = true
+
+[node name="spread" type="Path2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(640, 360)
+curve = SubResource("Curve2D_3172f")
